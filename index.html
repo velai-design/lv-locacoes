@@ -167,7 +167,10 @@
     box-shadow: var(--shadow-soft);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  .img-frame img { width: 100%; height: auto; display: block; }
+  .img-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+  .img-frame.portrait { aspect-ratio: 4/5; }
+  .img-frame.contain { background: #fff; }
+  .img-frame.contain img { object-fit: contain; }
 
   /* HERO SECTION */
   .hero {
@@ -177,7 +180,7 @@
     display: flex; flex-direction: column; align-items: center;
   }
   .hero .lede { margin: 1rem auto 3rem; }
-  .hero-media { width: 100%; max-width: 900px; margin-top: clamp(2rem, 5vw, 4rem); }
+  .hero-media { width: 100%; max-width: 460px; aspect-ratio: 3/4; margin-top: clamp(2rem, 5vw, 4rem); }
 
   /* NUMBERS STRIP */
   .numbers-grid { text-align: center; }
@@ -338,20 +341,22 @@
         </div>
       </div>
     </div>
-    <div class="img-frame rv" style="transition-delay: 0.1s;">
+    <div class="img-frame contain rv" style="transition-delay: 0.1s; aspect-ratio: 3/2;">
       <img src="zyon-pro-oficial.jpg" alt="Equipamento de depilação a LED Zyon Pro Cromatic" loading="lazy">
     </div>
   </div>
 </section>
 
 <section style="padding-top: 0;">
-  <div class="container rv">
-    <div class="bento-card" style="background: var(--surface); align-items: center; text-align: center; padding: clamp(3rem, 8vw, 6rem);">
+  <div class="container split">
+    <div class="img-frame portrait rv" style="transition-delay: 0.1s;">
+      <img src="laysa-crio.jpg" alt="Aparelho de criolipólise Crio em uso" loading="lazy">
+    </div>
+    <div class="rv">
       <span class="eyebrow">Módulo Opcional</span>
       <h2 class="subhead">Quer incluir a Crio?</h2>
-      <p class="lede" style="margin: 0 auto 3rem;">Adicione a criolipólise no mesmo orçamento. Sem compromisso.</p>
-      <div class="img-frame" style="max-width: 480px; width: 100%; margin: 0 auto 3rem;"><img src="laysa-crio.jpg" alt="Aparelho de criolipólise Crio" loading="lazy"></div>
-      <a href="#orcamento" class="pill-btn js-crio-cta">Adicionar ao orçamento</a>
+      <p class="lede">Adicione a criolipólise no mesmo orçamento. Sem compromisso.</p>
+      <a href="#orcamento" class="pill-btn js-crio-cta" style="margin-top: 2rem;">Adicionar ao orçamento</a>
     </div>
   </div>
 </section>
@@ -361,7 +366,27 @@
     <span class="eyebrow">A Especialista</span>
     <h2 class="subhead">LV Estética.</h2>
     <p class="lede" style="max-width: 60ch;">A operação é conduzida por Laysa Ventura. Equipamento entregue e configurado por quem atende na área e entende perfeitamente a rotina de uma clínica.</p>
-    <div class="img-frame" style="max-width: 300px; margin: 2.5rem auto 0;"><img src="laysa-hero.jpg" alt="Laysa Ventura, da LV Estética" loading="lazy"></div>
+    <div class="img-frame portrait" style="max-width: 280px; margin: 2.5rem auto 0;"><img src="laysa-hero.jpg" alt="Laysa Ventura, da LV Estética" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTO (prova social — clean + B2B) -->
+<section>
+  <div class="container" style="max-width: 800px;">
+    <div class="center-text rv" style="margin-bottom: 2.5rem;">
+      <span class="eyebrow">Quem já alugou</span>
+      <h2 class="subhead">A palavra de quem usa.</h2>
+    </div>
+    <figure class="bento-card rv" style="text-align: center; align-items: center;">
+      <div style="width: 44px; height: 3px; background: var(--cta-bg); border-radius: 2px; margin-bottom: 1.75rem;"></div>
+      <blockquote style="margin: 0; font-size: clamp(1.2rem, 2.6vw, 1.55rem); font-weight: 600; line-height: 1.5; letter-spacing: -0.01em; color: var(--ink-heavy);">
+        &ldquo;O equipamento chegou impecável e a entrega foi sem dor de cabeça. Consegui atender minhas clientes com tranquilidade, e o suporte esteve presente do começo ao fim.&rdquo;
+      </blockquote>
+      <figcaption style="margin-top: 1.75rem; font-weight: 700; color: var(--ink-heavy);">
+        Vandresa Falavigna
+        <span style="display: block; font-weight: 500; color: var(--ink-light); font-size: 0.95rem; margin-top: 4px;">Viva Mais · Clínica de Estética — MS</span>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
