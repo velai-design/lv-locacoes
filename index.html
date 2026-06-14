@@ -14,6 +14,26 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://velai-design.github.io/lv-locacoes/og-card.jpg">
 
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- Meta Pixel — troque COLE_AQUI_O_ID_DO_PIXEL pelo ID do seu Pixel (aparece 2x abaixo) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'COLE_AQUI_O_ID_DO_PIXEL');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -171,6 +191,8 @@
   .img-frame.portrait { aspect-ratio: 4/5; }
   .img-frame.contain { background: #fff; }
   .img-frame.contain img { object-fit: contain; }
+  .img-frame.natural { aspect-ratio: auto; }
+  .img-frame.natural img { height: auto; }
 
   /* HERO SECTION */
   .hero {
@@ -247,6 +269,8 @@
   footer { background: var(--ink-heavy); color: #F5F5F7; padding: 6rem 0 3rem; text-align: center; }
   .footer-brand { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 1rem; color: #fff; }
   .footer-bottom { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; color: rgba(255,255,255,0.5); font-weight: 500; }
+  .footer-bottom a { color: rgba(255,255,255,0.78); text-decoration: underline; text-underline-offset: 2px; transition: color 0.2s ease; }
+  .footer-bottom a:hover { color: #fff; }
 
   /* CTA FLUTUANTE (terracota, combinando com o botao principal) */
   .floating-cta {
@@ -297,32 +321,33 @@
 <section style="padding: 0 0 6rem 0;">
   <div class="container">
     <div class="bento-grid three-cols numbers-grid rv">
-      <div class="bento-card" style="padding: 2rem;"><span class="num-val">100%</span><span class="num-lbl">Entrega e Montagem</span></div>
+      <div class="bento-card" style="padding: 2rem;"><span class="num-val">Incluso</span><span class="num-lbl">Entrega e Montagem</span></div>
       <div class="bento-card" style="padding: 2rem;"><span class="num-val">Zero</span><span class="num-lbl">Custo de Manutenção</span></div>
-      <div class="bento-card" style="padding: 2rem;"><span class="num-val">MS</span><span class="num-lbl">Nova Andradina e Dourados</span></div>
+      <div class="bento-card" style="padding: 2rem;"><span class="num-val">300 km</span><span class="num-lbl">A partir de Nova Andradina (MS)</span></div>
     </div>
   </div>
 </section>
 
+<!-- POR QUE VALE A PENA (LED bom negocio + sem comprar) -->
 <section style="background: var(--surface-alt);">
   <div class="container">
     <div class="center-text rv">
-      <span class="eyebrow">Inteligência Financeira</span>
-      <h2 class="subhead">Comprar descapitaliza.</h2>
-      <p class="lede">Alugar coloca a tecnologia na sua clínica imediatamente.</p>
+      <span class="eyebrow">Por que vale a pena</span>
+      <h2 class="subhead">Atenda muito mais gente com uma tecnologia inovadora.</h2>
+      <p class="lede">A depilação a LED atende todos os tons de pele, inclusive pele negra. Mais gente que você pode atender &mdash; e que volta.</p>
     </div>
     <div class="bento-grid three-cols rv">
       <div class="bento-card">
-        <h3>Sem investir alto</h3>
-        <p>Você atende com um equipamento premium pagando apenas pelo tempo de uso.</p>
+        <h3>Todos os tons de pele</h3>
+        <p>Do mais claro ao mais escuro, inclusive pele negra. Você atende um público que outros métodos precisam recusar.</p>
       </div>
       <div class="bento-card">
-        <h3>Fature antes</h3>
-        <p>Não espere juntar o valor da máquina. Agende as clientes e lucre na mesma semana.</p>
+        <h3>Cliente que volta</h3>
+        <p>Depilação é feita em sessões: a mesma cliente retorna várias vezes. Receita recorrente e agenda cheia.</p>
       </div>
       <div class="bento-card">
-        <h3>Zero risco</h3>
-        <p>Atendeu a demanda. Devolveu. O modelo perfeito para testar antes de comprar.</p>
+        <h3>Faça um LED Day</h3>
+        <p>Alugue por um dia, divulgue um LED Day e encha a agenda de atendimentos. Você fatura o dia inteiro com o aparelho na sua clínica.</p>
       </div>
     </div>
   </div>
@@ -333,7 +358,7 @@
     <div class="rv">
       <span class="eyebrow">Ecossistema</span>
       <h2 class="subhead">Tudo pronto.<br>Só atender.</h2>
-      <p class="lede">A logística é nossa. O equipamento chega testado e instalado no seu endereço. Quando a sua agenda termina, nós recolhemos.</p>
+      <p class="lede">O equipamento chega testado e instalado no seu endereço. Quando a sua agenda termina, a gente busca de volta.</p>
       <div class="bento-grid" style="margin-top: 2rem;">
         <div class="bento-card" style="padding: 2rem;">
           <h3>Orientação e Suporte</h3>
@@ -353,7 +378,7 @@
       <img src="laysa-crio.jpg" alt="Aparelho de criolipólise Crio em uso" loading="lazy">
     </div>
     <div class="rv">
-      <span class="eyebrow">Módulo Opcional</span>
+      <span class="eyebrow">Conheça nossos aparelhos</span>
       <h2 class="subhead">Quer incluir a Crio?</h2>
       <p class="lede">Adicione a criolipólise no mesmo orçamento. Sem compromisso.</p>
       <a href="#orcamento" class="pill-btn js-crio-cta" style="margin-top: 2rem;">Adicionar ao orçamento</a>
@@ -364,9 +389,9 @@
 <section style="background: var(--surface-alt);">
   <div class="container center-text rv">
     <span class="eyebrow">A Especialista</span>
-    <h2 class="subhead">LV Estética.</h2>
-    <p class="lede" style="max-width: 60ch;">A operação é conduzida por Laysa Ventura. Equipamento entregue e configurado por quem atende na área e entende perfeitamente a rotina de uma clínica.</p>
-    <div class="img-frame portrait" style="max-width: 280px; margin: 2.5rem auto 0;"><img src="laysa-hero.jpg" alt="Laysa Ventura, da LV Estética" loading="lazy"></div>
+    <h2 class="subhead">Laysa Ventura.</h2>
+    <p class="lede" style="max-width: 60ch;">Laysa é esteticista e está à frente da Clínica LV, em Nova Andradina &mdash; um espaço completo, com depilação a LED, Crio, drenagem, limpeza de pele e Head Spa. Você não aluga com um intermediário: aluga com a profissional que usa esse equipamento todos os dias no próprio atendimento.</p>
+    <div class="img-frame natural" style="max-width: 300px; margin: 2.5rem auto 0;"><img src="laysa-hero.jpg" alt="Laysa Ventura, da LV Estética" loading="lazy"></div>
   </div>
 </section>
 
@@ -380,11 +405,11 @@
     <figure class="bento-card rv" style="text-align: center; align-items: center;">
       <div style="width: 44px; height: 3px; background: var(--cta-bg); border-radius: 2px; margin-bottom: 1.75rem;"></div>
       <blockquote style="margin: 0; font-size: clamp(1.2rem, 2.6vw, 1.55rem); font-weight: 600; line-height: 1.5; letter-spacing: -0.01em; color: var(--ink-heavy);">
-        &ldquo;O equipamento chegou impecável e a entrega foi sem dor de cabeça. Consegui atender minhas clientes com tranquilidade, e o suporte esteve presente do começo ao fim.&rdquo;
+        &ldquo;Além de disponibilizar o aparelho, a Laysa veio pessoalmente nos acompanhar &mdash; ensinando com paciência o manuseio, as técnicas de aplicação e até estratégias de vendas. Mesmo com chuva e frio, chegou com disposição e fez questão de estar ao nosso lado nos atendimentos. Sem dúvidas, fez toda diferença nesse começo.&rdquo;
       </blockquote>
       <figcaption style="margin-top: 1.75rem; font-weight: 700; color: var(--ink-heavy);">
         Vandresa Falavigna
-        <span style="display: block; font-weight: 500; color: var(--ink-light); font-size: 0.95rem; margin-top: 4px;">Viva Mais · Clínica de Estética — MS</span>
+        <span style="display: block; font-weight: 500; color: var(--ink-light); font-size: 0.95rem; margin-top: 4px;">Viva Mais · Clínica de Estética — Dourados (MS)</span>
       </figcaption>
     </figure>
   </div>
@@ -402,12 +427,16 @@
         <p>Você escolhe o pacote de horas. Entregamos e montamos na sua cidade. Buscamos ao fim do período.</p>
       </details>
       <details>
-        <summary>Qual a duração dos pacotes?</summary>
-        <p>Trabalhamos com opções precisas de 6, 8 ou 12 horas. Defina a sua necessidade no formulário.</p>
+        <summary>Quanto custa a locação?</summary>
+        <p>O valor depende da sua cidade, porque a entrega entra na conta. Me passa a sua cidade no formulário que eu te respondo com o valor fechado, sem enrolação.</p>
       </details>
       <details>
-        <summary>Preciso saber operar o aparelho?</summary>
-        <p>A entrega inclui orientação técnica completa para você atender suas clientes com total segurança.</p>
+        <summary>Vocês atendem a minha cidade?</summary>
+        <p>A base é em Nova Andradina (MS) e a gente atende num raio de até 300 km. Me passa a sua cidade no formulário que eu confirmo a entrega.</p>
+      </details>
+      <details>
+        <summary>Qual a duração dos pacotes?</summary>
+        <p>Trabalhamos com opções precisas de 6, 8 ou 12 horas. Defina a sua necessidade no formulário.</p>
       </details>
       <details>
         <summary>Como o equipamento é reservado?</summary>
@@ -424,7 +453,7 @@
     <div class="center-text rv">
       <span class="eyebrow">Contato</span>
       <h2 class="subhead">Monte o seu pacote.</h2>
-      <p class="lede">Retorno rápido e direto no WhatsApp.</p>
+      <p class="lede">Me passa a sua cidade e o pacote que eu te respondo no WhatsApp com o valor fechado.</p>
     </div>
 
     <form class="form-wrap rv" id="leadForm" novalidate style="transition-delay: 0.1s;">
@@ -470,7 +499,7 @@
     <div class="footer-brand">LV Locações</div>
     <p style="font-size: 1rem; color: #D1CFCA;">Equipamentos de Alta Performance · MS</p>
     <div class="footer-bottom">
-      <span>© 2026 LV Estética Personalizada LTDA · Privacidade</span>
+      <span>© 2026 LV Estética Personalizada LTDA · <a href="privacidade.html">Privacidade</a></span>
     </div>
   </div>
 </footer>
@@ -566,7 +595,10 @@
       body: JSON.stringify(data)
     }).catch(function (err) { console.error('Erro ao salvar lead na planilha:', err); });
 
-    // 2) abre o WhatsApp (com fallback se o popup for bloqueado no celular)
+    // 2) marca a conversao no Meta Pixel (so dispara depois que voce colar o ID do Pixel)
+    if (window.fbq) { fbq('track', 'Lead'); }
+
+    // 3) abre o WhatsApp (com fallback se o popup for bloqueado no celular)
     var win = window.open(whatsappUrl, '_blank');
     if (!win || win.closed || typeof win.closed === 'undefined') {
       msg.innerHTML = 'Toque aqui pra abrir o WhatsApp: <a href="' + whatsappUrl + '" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Continuar &rarr;</a>';
