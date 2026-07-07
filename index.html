@@ -507,8 +507,8 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
 <a href="#orcamento" class="floating-cta" id="floatingCta" aria-label="Solicitar orçamento">Solicitar orçamento <span aria-hidden="true">&rarr;</span></a>
 
 <script>
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBREjTd7P0dj9nR7p8zVqahzQOoZKy3r6cGqeEj_l9zhl_KmkSqNYIyb03bZlJycw/exec';
-  const WHATSAPP_NUMBER = '55XXXXXXXXXXX'; // >>> COLOQUE O NUMERO REAL DA LAYSA (55 + DDD + numero, sem espacos) <<<
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWQJ33ot3_KhaVpOtCUMfjVedfj_AuQxUgjocybEgKg_WGSfWZI3hQ2BC1ue-Tonzw0A/exec';
+  const WHATSAPP_NUMBER = '5567935016168';
 
   // Reveal suave ao rolar
   const io = new IntersectionObserver(function (entries) {
@@ -588,24 +588,32 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     );
     var whatsappUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + texto;
 
-    // 1) salva o lead na planilha
-    fetch(APPS_SCRIPT_URL, {
-      method: 'POST', mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(data)
-    }).catch(function (err) { console.error('Erro ao salvar lead na planilha:', err); });
+    // 1) salva o lead na planilha (envio garantido, mesmo saindo pro WhatsApp)
+    var payload = JSON.stringify(data);
+    var enviado = false;
+    try {
+      if (navigator.sendBeacon) {
+        enviado = navigator.sendBeacon(APPS_SCRIPT_URL, new Blob([payload], { type: 'text/plain;charset=utf-8' }));
+      }
+    } catch (e) { enviado = false; }
+    if (!enviado) {
+      try {
+        fetch(APPS_SCRIPT_URL, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: payload }).catch(function (err) {});
+      } catch (e) {}
+    }
 
-    // 2) marca a conversao no Meta Pixel (so dispara depois que voce colar o ID do Pixel)
+    // 2) marca a conversao no Meta Pixel
     if (window.fbq) { fbq('track', 'Lead'); }
 
-    // 3) abre o WhatsApp (com fallback se o popup for bloqueado no celular)
-    var win = window.open(whatsappUrl, '_blank');
-    if (!win || win.closed || typeof win.closed === 'undefined') {
-      msg.innerHTML = 'Toque aqui pra abrir o WhatsApp: <a href="' + whatsappUrl + '" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Continuar &rarr;</a>';
-      msg.className = 'form-msg success';
+    // 3) abre o WhatsApp de forma confiavel (inclusive celular e navegadores de apps)
+    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    showMsg('success', 'Pronto! Abrindo o WhatsApp pra fechar o orcamento...');
+    form.reset();
+    if (isMobile) {
+      window.location.href = whatsappUrl;
     } else {
-      showMsg('success', 'Pronto! Te levei pro WhatsApp pra fechar o orçamento.');
-      form.reset();
+      var win = window.open(whatsappUrl, '_blank');
+      if (!win) { window.location.href = whatsappUrl; }
     }
 
     btn.disabled = false;
