@@ -34,28 +34,32 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JT2VZY68JT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JT2VZY68JT');
+</script>
+<!-- End Google tag -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
   :root {
-    /* HARMONIA DE TEMPERATURA (Fim do desconforto visual) */
-    --bg-base: #EBE5D9;       /* Areia suave, super confortável para leitura */
-    --surface: #F8F5F0;       /* Creme claro para os cartões (NÃO é branco puro) */
-    --surface-alt: #E1DACD;   /* Tom de transição sutil */
-    
-    --ink-heavy: #2C2A26;     /* Marrom quase preto (menos duro aos olhos que o preto absoluto) */
-    --ink-light: #6E6A62;     /* Texto de apoio elegante */
-    
-    --accent: #7E6834;        /* Dourado escuro / Mostarda */
-    --sage-darkest: #3E342A;  /* Chumbo terroso */
-    
-    /* CTA EXTREMAMENTE CHAMATIVO E ELEGANTE */
-    --cta-bg: #A84B27;        /* Terracota Vibrante */
+    --bg-base: #EBE5D9;
+    --surface: #F8F5F0;
+    --surface-alt: #E1DACD;
+    --ink-heavy: #2C2A26;
+    --ink-light: #6E6A62;
+    --accent: #7E6834;
+    --sage-darkest: #3E342A;
+    --cta-bg: #A84B27;
     --cta-hover: #8C3C1D;
-    --cta-shadow: rgba(168, 75, 39, 0.35); /* Brilho projetado do botão */
-    
+    --cta-shadow: rgba(168, 75, 39, 0.35);
     --sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
     --radius-lg: 32px;
     --radius-md: 20px;
@@ -75,11 +79,10 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
 
   img { max-width: 100%; display: block; }
   a { color: inherit; text-decoration: none; }
-  
+
   .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
   section { padding: clamp(3.25rem, 9vw, 9rem) 0; }
 
-  /* TIPOGRAFIA MASSIVA */
   .headline {
     font-size: clamp(2.5rem, 7.5vw, 5.5rem);
     font-weight: 800;
@@ -113,11 +116,10 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     display: block;
   }
 
-  /* HEADER GLASSMORPHISM */
   header {
     position: fixed;
     top: 0; width: 100%; z-index: 100;
-    background: rgba(235, 229, 217, 0.85); /* Fundo com vidro fosco */
+    background: rgba(235, 229, 217, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 16px 0;
@@ -137,7 +139,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   }
   .header-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(62, 52, 42, 0.1); }
 
-  /* BOTÃO DE CTA PRINCIPAL (Terracota com Sombra Projetada) */
   .pill-btn {
     display: inline-flex;
     align-items: center;
@@ -159,7 +160,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     box-shadow: 0 16px 36px var(--cta-shadow);
   }
 
-  /* BENTO GRID UI */
   .bento-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
   @media (min-width: 768px) {
     .bento-grid.two-cols { grid-template-columns: 1fr 1fr; }
@@ -174,13 +174,13 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     border: 1px solid rgba(255, 255, 255, 0.4);
     transition: transform 0.4s, box-shadow 0.4s;
   }
-  .bento-card:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 25px 50px rgba(62, 52, 42, 0.08); 
+  .bento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(62, 52, 42, 0.08);
   }
   .bento-card h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
   .bento-card p { font-size: 1.05rem; color: var(--ink-light); font-weight: 500; }
-  
+
   .img-frame {
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -194,7 +194,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   .img-frame.natural { aspect-ratio: auto; }
   .img-frame.natural img { height: auto; }
 
-  /* HERO SECTION */
   .hero {
     min-height: auto;
     padding-top: clamp(6rem, 13vw, 11rem);
@@ -204,20 +203,16 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   .hero .lede { margin: 1rem auto 3rem; }
   .hero-media { width: 100%; max-width: 460px; aspect-ratio: 3/4; margin-top: clamp(2rem, 5vw, 4rem); }
 
-  /* NUMBERS STRIP */
   .numbers-grid { text-align: center; }
   .num-val { font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 800; color: var(--ink-heavy); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.5rem; display: block; }
   .num-lbl { font-size: 0.95rem; font-weight: 700; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.05em; }
 
-  /* SPLIT SECTIONS */
   .split { display: grid; gap: 4rem; align-items: center; }
   @media (min-width: 900px) { .split { grid-template-columns: 1fr 1fr; gap: 6rem; } }
 
-  /* CENTER BLOCKS */
   .center-text { text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 4rem; }
   .center-text .lede { margin: 0 auto; }
 
-  /* FAQ */
   .faq details { background: var(--surface); border-radius: var(--radius-md); margin-bottom: 16px; box-shadow: var(--shadow-soft); border: 1px solid rgba(255, 255, 255, 0.3); }
   .faq summary {
     font-size: 1.2rem; font-weight: 700; padding: 24px 32px; cursor: pointer; list-style: none;
@@ -228,7 +223,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   .faq details[open] summary::after { transform: rotate(45deg); }
   .faq p { padding: 0 32px 32px; color: var(--ink-light); font-size: 1.05rem; font-weight: 500; }
 
-  /* FORMS */
   .form-wrap {
     background: var(--surface);
     padding: clamp(2.5rem, 6vw, 4rem);
@@ -254,7 +248,7 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   }
   .apple-input::placeholder { color: #A8A398; font-weight: 500; }
   .apple-input:focus { border-color: var(--accent); background: var(--surface); }
-  
+
   .checkbox-item {
     display: flex; align-items: center; gap: 16px;
     background: var(--bg-base); padding: 20px; border-radius: 16px; cursor: pointer;
@@ -265,14 +259,12 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   .checkbox-label { font-weight: 700; font-size: 1.05rem; }
   .checkbox-label small { display: block; font-weight: 500; color: var(--ink-light); margin-top: 4px; font-size: 0.9rem; }
 
-  /* FOOTER */
   footer { background: var(--ink-heavy); color: #F5F5F7; padding: 6rem 0 3rem; text-align: center; }
   .footer-brand { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 1rem; color: #fff; }
   .footer-bottom { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; color: rgba(255,255,255,0.5); font-weight: 500; }
   .footer-bottom a { color: rgba(255,255,255,0.78); text-decoration: underline; text-underline-offset: 2px; transition: color 0.2s ease; }
   .footer-bottom a:hover { color: #fff; }
 
-  /* CTA FLUTUANTE (terracota, combinando com o botao principal) */
   .floating-cta {
     position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom));
     transform: translateX(-50%) translateY(170%);
@@ -285,12 +277,10 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   .floating-cta:hover { background: var(--cta-hover); }
   .floating-cta.show { transform: translateX(-50%) translateY(0); opacity: 1; }
 
-  /* MENSAGEM DO FORM */
   .form-msg { text-align: center; font-size: 0.95rem; font-weight: 600; margin-top: 16px; min-height: 1.2em; }
   .form-msg.error { color: #9b2c2c; }
   .form-msg.success { color: var(--accent); }
 
-  /* REVEAL ANIMATIONS */
   .rv { opacity: 0; transform: translateY(30px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
   .rv.in { opacity: 1; transform: translateY(0); }
 </style>
@@ -328,7 +318,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   </div>
 </section>
 
-<!-- POR QUE VALE A PENA (LED bom negocio + sem comprar) -->
 <section style="background: var(--surface-alt);">
   <div class="container">
     <div class="center-text rv">
@@ -395,7 +384,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   </div>
 </section>
 
-<!-- DEPOIMENTO (prova social, clean + B2B) -->
 <section>
   <div class="container" style="max-width: 800px;">
     <div class="center-text rv" style="margin-bottom: 2.5rem;">
@@ -457,7 +445,7 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     </div>
 
     <form class="form-wrap rv" id="leadForm" novalidate style="transition-delay: 0.1s;">
-      
+
       <div class="field">
         <input type="text" id="cidade" name="cidade" class="apple-input" required autocomplete="address-level2" placeholder="Cidade de atendimento">
       </div>
@@ -475,7 +463,7 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
       <div class="field">
         <input type="text" id="nome" name="nome" class="apple-input" required autocomplete="name" placeholder="Seu nome">
       </div>
-      
+
       <div class="field">
         <input type="tel" id="whatsapp" name="whatsapp" class="apple-input" required autocomplete="tel" inputmode="tel" placeholder="Seu WhatsApp">
       </div>
@@ -510,7 +498,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWQJ33ot3_KhaVpOtCUMfjVedfj_AuQxUgjocybEgKg_WGSfWZI3hQ2BC1ue-Tonzw0A/exec';
   const WHATSAPP_NUMBER = '5567998971949';
 
-  // Reveal suave ao rolar
   const io = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
@@ -518,7 +505,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
   }, { threshold: 0.1 });
   document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
 
-  // Link da Crio: marca o checkbox antes de levar pro formulario
   document.querySelectorAll('.js-crio-cta').forEach(function (el) {
     el.addEventListener('click', function () {
       var cb = document.getElementById('interesseCrio');
@@ -526,7 +512,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     });
   });
 
-  // CTA flutuante: aparece ao rolar, some no hero e no formulario
   (function () {
     var fc = document.getElementById('floatingCta');
     if (!fc || !('IntersectionObserver' in window)) return;
@@ -545,7 +530,6 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     if (formEl) ob.observe(formEl);
   })();
 
-  // Formulario
   var form = document.getElementById('leadForm');
   var btn  = document.getElementById('submitBtn');
   var msg  = document.getElementById('formMsg');
@@ -588,7 +572,7 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
     );
     var whatsappUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + texto;
 
-    // 1) salva o lead na planilha (envio garantido, mesmo saindo pro WhatsApp)
+    // 1) salva o lead na planilha
     var payload = JSON.stringify(data);
     var enviado = false;
     try {
@@ -602,10 +586,11 @@ src="https://www.facebook.com/tr?id=COLE_AQUI_O_ID_DO_PIXEL&ev=PageView&noscript
       } catch (e) {}
     }
 
-    // 2) marca a conversao no Meta Pixel
-    if (window.fbq) { fbq('track', 'Lead'); }
+    // 2) marca a conversao no Meta Pixel e no Google Analytics
+    if (window.fbq)  { fbq('track', 'Lead'); }
+    if (window.gtag) { gtag('event', 'generate_lead', { pacote: data.pacote, cidade: data.cidade, equipamento: data.equipamento }); }
 
-    // 3) abre o WhatsApp de forma confiavel (inclusive celular e navegadores de apps)
+    // 3) abre o WhatsApp
     var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     showMsg('success', 'Pronto! Abrindo o WhatsApp pra fechar o orcamento...');
     form.reset();
