@@ -274,6 +274,7 @@ src="https://www.facebook.com/tr?id=1392856086034216&ev=PageView&noscript=1"/></
       <h1 class="headline">Depilação a LED.</h1>
       <p class="lede">Zyon Pro Cromatic. Entregue e montado na sua clínica. Fature sem precisar comprar o aparelho.</p>
       <a href="#orcamento" class="pill-btn">Solicitar Orçamento</a>
+<div style="margin-top: 14px;"><a href="https://wa.me/5567998971949?text=Ol%C3%A1%2C%20Laysa!%20Vi%20o%20an%C3%BAncio%20e%20quero%20um%20or%C3%A7amento%20da%20depila%C3%A7%C3%A3o%20a%20LED." class="pill-btn wa-direct" target="_blank" rel="noopener" style="background: #1FA855; box-shadow: 0 12px 28px rgba(31,168,85,0.35);">Chamar no WhatsApp</a></div>
     </div>
     <div class="hero-media img-frame rv" style="transition-delay: 0.1s;">
       <img src="laysa-zyon.jpg" alt="Depilação a LED com o Zyon Pro Cromatic">
@@ -435,6 +436,7 @@ src="https://www.facebook.com/tr?id=1392856086034216&ev=PageView&noscript=1"/></
       </label>
       <button type="submit" class="pill-btn" style="width: 100%; font-size: 1.15rem; padding: 24px;" id="submitBtn">Enviar Solicitação</button>
       <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+<p style="text-align:center; margin-top:16px;"><a class="wa-direct" href="https://wa.me/5567998971949?text=Ol%C3%A1%2C%20Laysa!%20Vi%20o%20an%C3%BAncio%20e%20quero%20um%20or%C3%A7amento%20da%20depila%C3%A7%C3%A3o%20a%20LED." target="_blank" rel="noopener" style="font-weight:700; text-decoration:underline; text-underline-offset:3px;">Prefere falar direto? Chama no WhatsApp &rarr;</a></p>
     </form>
   </div>
 </section>
@@ -480,7 +482,13 @@ src="https://www.facebook.com/tr?id=1392856086034216&ev=PageView&noscript=1"/></
     if (hero) ob.observe(hero);
     if (formEl) ob.observe(formEl);
   })();
-  var form = document.getElementById('leadForm');
+  document.querySelectorAll('.wa-direct').forEach(function (el) {
+el.addEventListener('click', function () {
+if (window.gtag) gtag('event', 'generate_lead', { metodo: 'whatsapp_direto' });
+if (window.fbq) fbq('track', 'Contact');
+});
+});
+var form = document.getElementById('leadForm');
   var btn  = document.getElementById('submitBtn');
   var msg  = document.getElementById('formMsg');
   function showMsg(type, text) { if (msg) { msg.textContent = text; msg.className = 'form-msg ' + type; } }
