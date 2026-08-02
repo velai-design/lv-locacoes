@@ -273,7 +273,7 @@ src="https://www.facebook.com/tr?id=1392856086034216&ev=PageView&noscript=1"/></
       <span class="eyebrow">Equipamento Profissional</span>
       <h1 class="headline">Depilação a LED.</h1>
       <p class="lede">Zyon Pro Cromatic. Entregue e montado na sua clínica. Fature sem precisar comprar o aparelho.</p>
-      <a href="#orcamento" class="pill-btn">Solicitar Orçamento</a>
+      <a href="https://wa.me/5567998971949" class="pill-btn js-wa-cta">Chamar no WhatsApp</a><p style="margin-top:1rem;"><a href="#orcamento" style="font-weight:700;color:var(--accent);text-decoration:underline;text-underline-offset:3px;">ou monte seu pacote no formulário</a></p>
     </div>
     <div class="hero-media img-frame rv" style="transition-delay: 0.1s;">
       <img src="laysa-zyon.jpg" alt="Depilação a LED com o Zyon Pro Cromatic">
@@ -447,10 +447,10 @@ src="https://www.facebook.com/tr?id=1392856086034216&ev=PageView&noscript=1"/></
     </div>
   </div>
 </footer>
-<a href="#orcamento" class="floating-cta" id="floatingCta" aria-label="Solicitar orçamento">Solicitar orçamento <span aria-hidden="true">&rarr;</span></a>
+<a href="https://wa.me/5567998971949" class="floating-cta js-wa-cta" id="floatingCta" aria-label="Chamar no WhatsApp">Chamar no WhatsApp <span aria-hidden="true">&rarr;</span></a>
 <script>
   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWQJ33ot3_KhaVpOtCUMfjVedfj_AuQxUgjocybEgKg_WGSfWZI3hQ2BC1ue-Tonzw0A/exec';
-  const WHATSAPP_NUMBER = '5567998971949';
+  const WHATSAPP_NUMBER = '5567998971949'; var WA_TEXT = encodeURIComponent('Olá, Laysa! Quero um orçamento de ALUGUEL do LED para minha clínica. Minha cidade é: '); document.querySelectorAll('.js-wa-cta').forEach(function (el) { el.setAttribute('href', 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + WA_TEXT); el.addEventListener('click', function () { if (window.gtag) gtag('event', 'click_whatsapp', { posicao: el.id || 'hero' }); if (window.fbq) fbq('track', 'Contact', { content_name: 'WhatsApp direto LV Locacoes' }); }); });
   const io = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
