@@ -1,568 +1,760 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LV Locações · Locação de LED</title>
-<meta name="description" content="Alugue o equipamento profissional de depilação a LED. Entregue, montado e pronto pra atender.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LV Locações · Locação de LED">
-<meta property="og:description" content="Alugue o equipamento profissional de depilação a LED. Entregue, montado e pronto pra atender.">
-<meta property="og:url" content="https://velai-design.github.io/lv-locacoes/">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aluguel de aparelho de depilação a LED por diária · LV Locações · MS</title>
+<meta name="description" content="Aluguel de aparelho de depilação a LED para clínicas de estética. Diária em pacotes de 6, 8 ou 12 horas, com entrega, instalação e retirada. Nova Andradina e região, MS.">
+<meta property="og:title" content="Alugue o aparelho de depilação a LED por diária">
+<meta property="og:description" content="A partir de R$ 650 a diária de 6 horas em Nova Andradina, com entrega, instalação e disparos livres.">
 <meta property="og:image" content="https://velai-design.github.io/lv-locacoes/og-card.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://velai-design.github.io/lv-locacoes/og-card.jpg">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
-<!-- Meta Pixel · LV Locações Site (ID 1392856086034216) -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1392856086034216');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1392856086034216&ev=PageView&noscript=1"/></noscript>
-<!-- End Meta Pixel -->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT2VZY68JT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JT2VZY68JT');
-</script>
-<!-- End Google tag -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-JT2VZY68JT');</script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1392856086034216');fbq('track','PageView');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://velai-design.github.io/lv-locacoes/favicon.png">
 <style>
-  :root {
-    --bg-base: #EBE5D9;
-    --surface: #F8F5F0;
-    --surface-alt: #E1DACD;
-    --ink-heavy: #2C2A26;
-    --ink-light: #6E6A62;
-    --accent: #7E6834;
-    --sage-darkest: #3E342A;
-    --cta-bg: #A84B27;
-    --cta-hover: #8C3C1D;
-    --cta-shadow: rgba(168, 75, 39, 0.35);
-    --sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
-    --radius-lg: 32px;
-    --radius-md: 20px;
-    --shadow-soft: 0 20px 40px rgba(62, 52, 42, 0.05);
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-  body {
-    font-family: var(--sans);
-    background: var(--bg-base);
-    color: var(--ink-heavy);
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-  img { max-width: 100%; display: block; }
-  a { color: inherit; text-decoration: none; }
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-  section { padding: clamp(3.25rem, 9vw, 9rem) 0; }
-  .headline {
-    font-size: clamp(2.5rem, 7.5vw, 5.5rem);
-    font-weight: 800;
-    line-height: 1.05;
-    letter-spacing: -0.04em;
-    color: var(--ink-heavy);
-    margin-bottom: 0.3em;
-  }
-  .subhead {
-    font-size: clamp(1.7rem, 5vw, 3.5rem);
-    font-weight: 800;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    margin-bottom: 0.5em;
-  }
-  .lede {
-    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-    color: var(--ink-light);
-    font-weight: 500;
-    max-width: 45ch;
-    line-height: 1.5;
-    letter-spacing: -0.01em;
-  }
-  .eyebrow {
-    font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1rem;
-    display: block;
-  }
-  header {
-    position: fixed;
-    top: 0; width: 100%; z-index: 100;
-    background: rgba(235, 229, 217, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(248, 245, 240, 0.5);
-  }
-  header .container { display: flex; justify-content: space-between; align-items: center; }
-  .brand { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.02em; color: var(--ink-heavy); }
-  .header-btn {
-    background: var(--surface);
-    color: var(--ink-heavy);
-    font-weight: 700;
-    font-size: 0.85rem;
-    padding: 10px 20px;
-    border-radius: 40px;
-    box-shadow: 0 4px 10px rgba(62, 52, 42, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .header-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(62, 52, 42, 0.1); }
-  .pill-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--cta-bg);
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.05rem;
-    padding: 22px 46px;
-    border-radius: 60px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 12px 28px var(--cta-shadow);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s, background 0.3s;
-  }
-  .pill-btn:hover {
-    background: var(--cta-hover);
-    transform: scale(1.03);
-    box-shadow: 0 16px 36px var(--cta-shadow);
-  }
-  .bento-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
-  @media (min-width: 768px) {
-    .bento-grid.two-cols { grid-template-columns: 1fr 1fr; }
-    .bento-grid.three-cols { grid-template-columns: repeat(3, 1fr); }
-  }
-  .bento-card {
-    background: var(--surface);
-    border-radius: var(--radius-lg);
-    padding: clamp(2.5rem, 5vw, 4rem);
-    box-shadow: var(--shadow-soft);
-    display: flex; flex-direction: column; justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    transition: transform 0.4s, box-shadow 0.4s;
-  }
-  .bento-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 25px 50px rgba(62, 52, 42, 0.08);
-  }
-  .bento-card h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
-  .bento-card p { font-size: 1.05rem; color: var(--ink-light); font-weight: 500; }
-  .img-frame {
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .img-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-  .img-frame.portrait { aspect-ratio: 4/5; }
-  .img-frame.contain { background: #fff; }
-  .img-frame.contain img { object-fit: contain; }
-  .img-frame.natural { aspect-ratio: auto; }
-  .img-frame.natural img { height: auto; }
-  .hero {
-    min-height: auto;
-    padding-top: clamp(6rem, 13vw, 11rem);
-    text-align: center;
-    display: flex; flex-direction: column; align-items: center;
-  }
-  .hero .lede { margin: 1rem auto 3rem; }
-  .hero-media { width: 100%; max-width: 460px; aspect-ratio: 3/4; margin-top: clamp(2rem, 5vw, 4rem); }
-  .numbers-grid { text-align: center; }
-  .num-val { font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 800; color: var(--ink-heavy); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.5rem; display: block; }
-  .num-lbl { font-size: 0.95rem; font-weight: 700; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.05em; }
-  .split { display: grid; gap: 4rem; align-items: center; }
-  @media (min-width: 900px) { .split { grid-template-columns: 1fr 1fr; gap: 6rem; } }
-  .center-text { text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 4rem; }
-  .center-text .lede { margin: 0 auto; }
-  .faq details { background: var(--surface); border-radius: var(--radius-md); margin-bottom: 16px; box-shadow: var(--shadow-soft); border: 1px solid rgba(255, 255, 255, 0.3); }
-  .faq summary {
-    font-size: 1.2rem; font-weight: 700; padding: 24px 32px; cursor: pointer; list-style: none;
-    display: flex; justify-content: space-between; align-items: center; letter-spacing: -0.01em;
-  }
-  .faq summary::-webkit-details-marker { display: none; }
-  .faq summary::after { content: '+'; font-size: 1.8rem; color: var(--accent); transition: transform 0.3s; }
-  .faq details[open] summary::after { transform: rotate(45deg); }
-  .faq p { padding: 0 32px 32px; color: var(--ink-light); font-size: 1.05rem; font-weight: 500; }
-  .form-wrap {
-    background: var(--surface);
-    padding: clamp(2.5rem, 6vw, 4rem);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .field { margin-bottom: 24px; }
-  .apple-input {
-    width: 100%;
-    background: var(--bg-base);
-    border: 2px solid transparent;
-    border-radius: 16px;
-    padding: 18px 24px;
-    font-size: 1.1rem;
-    font-family: var(--sans);
-    font-weight: 600;
-    color: var(--ink-heavy);
-    transition: all 0.3s;
-    outline: none;
-  }
-  .apple-input::placeholder { color: #A8A398; font-weight: 500; }
-  .apple-input:focus { border-color: var(--accent); background: var(--surface); }
-  .checkbox-item {
-    display: flex; align-items: center; gap: 16px;
-    background: var(--bg-base); padding: 20px; border-radius: 16px; cursor: pointer;
-    margin: 32px 0; border: 2px solid transparent; transition: border 0.3s;
-  }
-  .checkbox-item:hover { border-color: rgba(126, 104, 52, 0.2); }
-  .checkbox-item input { width: 22px; height: 22px; accent-color: var(--cta-bg); }
-  .checkbox-label { font-weight: 700; font-size: 1.05rem; }
-  .checkbox-label small { display: block; font-weight: 500; color: var(--ink-light); margin-top: 4px; font-size: 0.9rem; }
-  footer { background: var(--ink-heavy); color: #F5F5F7; padding: 6rem 0 3rem; text-align: center; }
-  .footer-brand { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 1rem; color: #fff; }
-  .footer-bottom { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; color: rgba(255,255,255,0.5); font-weight: 500; }
-  .footer-bottom a { color: rgba(255,255,255,0.78); text-decoration: underline; text-underline-offset: 2px; transition: color 0.2s ease; }
-  .footer-bottom a:hover { color: #fff; }
-  .floating-cta {
-    position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom));
-    transform: translateX(-50%) translateY(170%);
-    z-index: 90; display: inline-flex; align-items: center; gap: 8px;
-    background: var(--cta-bg); color: #fff; font-weight: 700; font-size: 1rem;
-    padding: 16px 30px; border-radius: 60px; text-decoration: none;
-    box-shadow: 0 14px 32px var(--cta-shadow);
-    opacity: 0; transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.35s;
-  }
-  .floating-cta:hover { background: var(--cta-hover); }
-  .floating-cta.show { transform: translateX(-50%) translateY(0); opacity: 1; }
-  .form-msg { text-align: center; font-size: 0.95rem; font-weight: 600; margin-top: 16px; min-height: 1.2em; }
-  .form-msg.error { color: #9b2c2c; }
-  .form-msg.success { color: var(--accent); }
-  .rv { opacity: 0; transform: translateY(30px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
-  .rv.in { opacity: 1; transform: translateY(0); }
+/* ================= MOBILE FIRST ================= */
+:root{
+  --bone:#FAF7F2;--paper:#FFF;--ink:#191612;--ink2:#4C453C;--ink3:#8A8276;
+  --line:#E4DDD2;--line2:#F1EBE2;--acc:#B8431C;--accdk:#973417;--accsoft:#FBEEE7;
+  --ok:#1F6B3F;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --pad:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--bone);color:var(--ink);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:84px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 var(--pad)}
+.lab{font-size:10.5px;letter-spacing:.17em;text-transform:uppercase;font-weight:600}
+.num{font-variant-numeric:tabular-nums}
+.rv{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+/* nav: 1 link só */
+nav{position:sticky;top:0;z-index:70;background:rgba(250,247,242,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:10px}
+.logo{font-weight:800;letter-spacing:-.03em;font-size:15px;white-space:nowrap}
+.logo em{font-style:normal;color:var(--acc)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--acc);color:#fff;font-weight:700;font-size:14px;letter-spacing:-.01em;padding:12px 16px;border-radius:4px;min-height:44px;transition:background .15s}
+.btn:active{background:var(--accdk)}
+.btn.wide{width:100%;padding:17px 20px;font-size:16.5px;min-height:56px}
+.btn.out{background:transparent;border:1px solid var(--line);color:var(--ink);font-weight:600}
+.btn.ink{background:var(--ink)}
+.btn .ar{opacity:.7;font-weight:400}
+
+/* hero V4 */
+.hero{padding:0;background:var(--acc);color:#fff;border-bottom:none}
+.hero .wrap{padding-top:22px;padding-bottom:26px}
+.qual{display:inline-block;border:1px solid rgba(255,255,255,.45);border-radius:100px;padding:5px 12px;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#fff}
+.hero h1{color:#fff;font-size:clamp(30px,7.9vw,64px);line-height:1.02;letter-spacing:-.042em;font-weight:800;margin-top:12px}
+.hero .sub{color:rgba(255,255,255,.92);font-size:15.5px;margin-top:10px;max-width:40ch;line-height:1.45}
+.hero .acts{display:flex;flex-direction:column;gap:9px;margin-top:16px}
+.hero .btn{background:#fff;color:var(--acc);font-weight:800}
+.hero .btn:active{background:#FBE6DD}
+.hero .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.5);color:#fff;font-weight:700}
+.pick{margin-top:16px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:13px 13px 14px}
+.pick .pl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:rgba(255,255,255,.85);display:block;margin-bottom:7px}
+.pick .row2{display:flex;gap:7px;flex-wrap:wrap}
+.pick .hchip{border:1px solid rgba(255,255,255,.5);background:transparent;color:#fff;border-radius:100px;padding:10px 16px;font-size:14.5px;font-weight:700;min-height:44px}
+.pick .hchip[aria-pressed="true"]{background:#fff;color:var(--acc);border-color:#fff}
+.pick select{width:100%;min-height:46px;margin-top:11px;border-radius:6px;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.1);color:#fff;font-size:15px;font-weight:600;padding:0 12px;appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'8\'><path d=\'M1 1l5 5 5-5\' stroke=\'white\' stroke-width=\'2\' fill=\'none\'/></svg>");background-repeat:no-repeat;background-position:right 13px center}
+.pick select option{color:#191612}
+.pick .res{margin-top:11px;padding-top:11px;border-top:1px solid rgba(255,255,255,.25);font-size:13.5px;font-weight:700;display:none}
+.pick .res.on{display:block}
+.pricehero{margin-top:14px;font-size:15px;color:rgba(255,255,255,.95)}
+.pricehero b{font-size:24px;font-weight:800;letter-spacing:-.03em;display:block}
+.pricehero span{font-size:12.5px;color:rgba(255,255,255,.8)}
+.scarce{margin-top:14px;font-size:13.5px;color:rgba(255,255,255,.92);line-height:1.4}
+.scarce b{color:#fff;font-weight:800}
+.microp{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:11.5px;color:rgba(255,255,255,.85);font-weight:600}
+.microp b{color:#fff;font-weight:800}
+/* hero antigo */
+.hero{padding:26px 0 0}
+.tagline{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--paper);border-radius:100px;padding:6px 13px;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink2);font-weight:600}
+.tagline i{width:6px;height:6px;border-radius:50%;background:var(--ok);display:inline-block}
+h1{font-size:clamp(32px,8.4vw,72px);line-height:1.03;letter-spacing:-.042em;font-weight:800;margin-top:16px}
+.lede{color:var(--ink2);font-size:16.5px;margin-top:14px;max-width:44ch}
+
+/* CONFIGURADOR */
+.cfgwrap{background:var(--bone);padding:18px 0 4px;border-bottom:1px solid var(--line)}
+.cfg{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin-top:0;overflow:hidden;box-shadow:0 1px 0 rgba(25,22,18,.03)}
+.cfg .hd{padding:15px 16px 13px;border-bottom:1px solid var(--line2);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.cfg .hd .st{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+.cfg .bd{padding:16px}
+.q{font-size:13px;font-weight:700;margin-bottom:9px;display:flex;align-items:center;gap:7px}
+.q b{width:18px;height:18px;border-radius:50%;background:var(--ink);color:#fff;font-size:10px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:1px solid var(--line);background:var(--bone);border-radius:100px;padding:10px 15px;font-size:14px;font-weight:600;min-height:44px;display:inline-flex;align-items:center;transition:.12s}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip.dim{font-weight:500;font-size:13.5px}
+.grp+.grp{margin-top:16px;padding-top:16px;border-top:1px solid var(--line2)}
+.out-line{display:flex;justify-content:space-between;gap:12px;padding:12px 16px;border-top:1px solid var(--line2);font-size:14px;align-items:baseline}
+.out-line span:last-child{font-weight:700;text-align:right}
+.out-line.hi{background:var(--accsoft)}
+.out-line.hi span:last-child{color:var(--acc)}
+.cfg .ft{padding:14px 16px 16px;border-top:1px solid var(--line2)}
+.cfg .mini{font-size:12px;color:var(--ink3);margin-top:10px;text-align:center}
+
+.shot{margin-top:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}
+.shot img{width:100%;height:220px;object-fit:cover}
+.shot .tg{position:absolute;left:0;bottom:0;background:var(--acc);color:#fff;padding:7px 12px;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+
+/* trust */
+.trust{background:var(--paper);border-bottom:1px solid var(--line)}
+.trust .g{display:grid;grid-template-columns:1fr 1fr}
+.trust .c{padding:16px 12px 16px 0}
+.trust .c:nth-child(odd){border-right:1px solid var(--line2)}
+.trust .c:nth-child(odd){padding-right:12px}
+.trust .c:nth-child(-n+2){border-bottom:1px solid var(--line2)}
+.trust .k{font-size:18px;font-weight:800;letter-spacing:-.03em}
+.trust .t{color:var(--ink3);font-size:12px;margin-top:2px;line-height:1.35}
+
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+section.paper{background:var(--paper)}
+.idx{color:var(--acc);display:block;margin-bottom:10px}
+h2{font-size:clamp(24px,6.4vw,40px);line-height:1.09;letter-spacing:-.036em;font-weight:800}
+.dek{color:var(--ink2);margin-top:13px;font-size:16px;max-width:52ch}
+.after{margin-top:24px}
+
+/* calc */
+.vs{margin-top:24px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
+.vsr{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:8px;padding:13px 14px;border-bottom:1px solid var(--line2);font-size:13.5px;align-items:center}
+.vsr:last-child{border-bottom:none}
+.vsr.vshead{background:var(--bone);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--ink3)}
+.vsr span:first-child{font-weight:700;color:var(--ink)}
+.vsr .no{color:var(--ink3)}
+.vsr .yes{color:var(--acc);font-weight:800}
+.crio{margin-top:26px;border:1px solid var(--line);border-radius:8px;background:var(--bone);overflow:hidden}
+.crio img{display:block;width:100%;height:auto;aspect-ratio:1500/843;object-fit:cover}
+.crio>div{padding:20px}
+.crio h3{font-size:21px;letter-spacing:-.03em;font-weight:800;margin-top:6px}
+.crio p{color:var(--ink2);font-size:15px;margin:9px 0 16px}
+.casebox{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0 4px}
+.casebox .cn{font-size:44px;font-weight:800;letter-spacing:-.045em;color:var(--acc);line-height:1;flex:none}
+.casebox .ct{font-size:14.5px;color:var(--ink2);line-height:1.45}
+.casebox .ct b{color:var(--ink)}
+.calc{margin-top:22px;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.calc .r{display:flex;justify-content:space-between;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line2);font-size:14.5px;align-items:center}
+.calc .r:last-child{border-bottom:none}
+.calc .r b{font-weight:700;white-space:nowrap}
+.calc .r.proofline{background:#FFF9F5;font-size:13px;color:var(--ink2)}
+.calc .r.proofline b{color:var(--acc)}
+.calc .r.big{background:var(--accsoft);padding:18px 16px}
+.calc .r.big span{font-weight:700}
+.calc .r.big b{color:var(--acc);font-size:26px;letter-spacing:-.03em}
+.stp{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.stp button{width:44px;height:44px;font-size:18px;font-weight:700;color:var(--ink2)}
+.stp input{-moz-appearance:textfield;appearance:textfield;width:70px;height:44px;border:none;border-left:1px solid var(--line);border-right:1px solid var(--line);text-align:center;font-weight:700;font-size:15px;background:var(--bone);font-variant-numeric:tabular-nums}
+.stp input:focus{outline:2px solid var(--acc);outline-offset:-2px}
+
+/* cards */
+.cards{display:grid;gap:10px;margin-top:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:18px;text-align:left;width:100%}
+.card[aria-pressed="true"]{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.card .ch{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.card .h{font-size:24px;font-weight:800;letter-spacing:-.035em}
+.card .d{color:var(--ink2);font-size:14.5px;margin-top:9px}
+.card .pr{margin-top:14px;padding-top:12px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--ink3)}
+.card .pr b{font-size:17px;color:var(--ink);letter-spacing:-.02em}
+.tag{border:1px solid var(--line);border-radius:100px;padding:4px 10px;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink3)}
+.tag.on{background:var(--accsoft);border-color:#EBD3C6;color:#8A3315}
+
+.zones{margin-top:12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);overflow:hidden}
+.zones .z{display:flex;justify-content:space-between;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line2);font-size:14.5px;align-items:center}
+.zones .z:last-child{border-bottom:none}
+.zones .z.on{background:var(--accsoft)}
+.zones .z em{font-style:normal;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);font-weight:700}
+.note{margin-top:14px;color:var(--ink3);font-size:13px}
+
+.split{margin-top:24px}
+.split ul{list-style:none}
+.figbig{margin-top:22px}
+
+@media(min-width:720px){.figbig{margin-top:0}}
+.split>div+div{margin-top:22px}
+.split ul{list-style:none}
+.figbig{margin-top:22px}
+
+@media(min-width:720px){.figbig{margin-top:0}}
+.split h3{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;padding-bottom:9px;border-bottom:1px solid var(--line);font-weight:700}
+.split li,.split ul li{list-style:none;padding:11px 0;border-bottom:1px solid var(--line2);font-size:15px;display:flex;gap:10px}
+.split li b{color:var(--acc);flex:none}
+.split .off li b{color:var(--ink3)}
+
+.spec{margin-top:22px;border-top:1px solid var(--line)}
+.spec .row{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.spec .sk{color:var(--ink2)}
+.spec .sv{font-weight:700;text-align:right}
+.spec details{border-bottom:none;margin-top:6px}
+.spec details summary{font-size:14px;padding:12px 0;font-weight:700}
+.spec details p{font-size:14px;padding-bottom:10px}
+
+.steps{margin-top:22px;border-top:1px solid var(--line)}
+.steps div{padding:17px 0;border-bottom:1px solid var(--line)}
+.steps .n{font-size:10.5px;letter-spacing:.16em;color:var(--acc);font-weight:700}
+.steps h4{font-size:16.5px;margin-top:5px;font-weight:700;letter-spacing:-.02em}
+.steps p{color:var(--ink2);font-size:14.5px;margin-top:4px}
+
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:22px}
+.gal img{width:100%;height:150px;object-fit:cover;object-position:50% 22%;border-radius:5px}
+.gal .w{grid-column:1/-1;height:200px}
+
+.qc{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px;margin-top:20px}
+.qc p{font-size:16.5px;line-height:1.45;font-weight:500}
+.qc .print{width:100%;max-width:340px;border:1px solid var(--line);border-radius:6px;margin-bottom:16px}
+.printhold{display:none}
+.rev .printhold{display:flex;align-items:center;justify-content:center;height:150px;max-width:340px;margin-bottom:16px;border:2px dashed #E0C36A;border-radius:6px;background:#FFF9E8;color:#7A5E08;font-size:11px;letter-spacing:.14em;font-weight:800;text-align:center;padding:12px}
+.qc .who{margin-top:14px;padding-top:12px;border-top:1px solid var(--line2);color:var(--ink3);font-size:13px}
+
+.cov{margin-top:22px;border-top:1px solid var(--line)}
+.cov .ci{display:flex;justify-content:space-between;align-items:center;padding:14px 0;min-height:48px;border-bottom:1px solid var(--line);font-size:15.5px;font-weight:600;width:100%;text-align:left}
+.cov .ci em{font-style:normal;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+
+details{border-bottom:1px solid var(--line)}
+details summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:700;font-size:15.5px;display:flex;justify-content:space-between;gap:14px;min-height:44px;align-items:center;letter-spacing:-.015em}
+details summary::-webkit-details-marker{display:none}
+details summary:after{content:"+";color:var(--acc);font-size:19px;font-weight:400;flex:none}
+details[open] summary:after{content:"–"}
+details p{padding:0 0 18px;color:var(--ink2);font-size:15px}
+
+.final{background:var(--acc);border-bottom:none;color:#fff}
+.final h2{font-size:clamp(27px,7.2vw,52px)}
+.final .dek{color:rgba(255,255,255,.9)}
+.final .idx{color:rgba(255,255,255,.68)}
+.final .btn.ink{background:#fff;color:var(--acc)}
+.final .btn.ink:hover{background:#FDEFE9}
+
+footer{background:var(--paper);padding:26px 0 30px;color:var(--ink3);font-size:12.5px;border-top:1px solid var(--line)}
+footer div+div{margin-top:5px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(255,255,255,.98);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:9px var(--pad) calc(9px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:10px;box-shadow:0 -4px 18px rgba(25,22,18,.07)}
+.bar .l{flex:1;min-width:0;font-size:11px;color:var(--ink3);line-height:1.3}
+.bar .l b{display:block;color:var(--ink);font-size:14px;font-weight:800;letter-spacing:-.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.flag{display:none;background:#FFF3CE;border:1px solid #E0C36A;color:#7A5E08;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:2px 6px;border-radius:2px;white-space:nowrap;font-weight:700}
+
+/* ================= >=720 ================= */
+@media(min-width:720px){
+  .crio{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center}
+  .crio img{height:auto;align-self:stretch;object-fit:cover;min-height:100%}
+
+  .hero .wrap{padding-top:44px;padding-bottom:44px}
+  .hero .acts{flex-direction:row}
+  .hero .btn.wide{width:auto}
+  .cfgwrap{padding:22px 0 8px}
+
+  :root{--pad:28px}
+  .hero{padding:48px 0 0}
+  .hero .cols{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:start}
+  .cfg{margin-top:0}
+  .shot img{height:330px}
+  .trust .g{grid-template-columns:repeat(4,1fr)}
+  .trust .c{border-bottom:none!important;padding:20px 16px 20px 0}
+  .trust .c+.c{border-left:1px solid var(--line2);padding-left:16px}
+  .trust .c:nth-child(odd){border-right:none}
+  section{padding:74px 0}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .split>div+div{margin-top:0}
+  .steps{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+  .gal{grid-template-columns:repeat(3,1fr)}
+  .gal img,.gal .w{height:230px;grid-column:auto}
+  .cov{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+  .qc{padding:28px}
+  .qc p{font-size:20px}
+  .btn.wide{width:auto}
+  .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+}
+@media(min-width:1000px){
+  body{padding-bottom:0}
+  .bar{display:none}
+  nav .wrap{height:64px}
+  .logo{font-size:17px}
+  .btn:hover{background:var(--accdk)}
+  .btn.out:hover{background:#F1EBE2}
+  .chip:hover{border-color:var(--ink3)}
+  .hero{padding:66px 0 0}
+  .shot img{height:400px}
+  section{padding:92px 0}
+  .shead{display:grid;grid-template-columns:120px 1fr;gap:26px;align-items:start}
+  .idx{margin-bottom:0}
+  h2{max-width:19ch}
+  .steps{grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+  .steps div{border-bottom:none;border-right:1px solid var(--line);padding:24px 20px 24px 0}
+  .steps div:last-child{border-right:none}
+  footer .wrap{display:flex;justify-content:space-between}
+  footer div+div{margin-top:0}
+}
+.rev .flag{display:inline}
+.stp input::-webkit-outer-spin-button,.stp input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+
+/* ============ REFINO ============ */
+body{letter-spacing:-.005em}
+h1,h2,h3,.card .h,.trust .k,.pricehero b{letter-spacing:-.038em}
+
+/* botões: impossíveis de ignorar, sem perder elegância */
+.btn{border-radius:10px;font-weight:800;letter-spacing:-.012em;box-shadow:0 6px 16px rgba(184,67,28,.22);transition:transform .18s cubic-bezier(.16,1,.3,1),box-shadow .18s,background .18s}
+.btn:after{content:"→";margin-left:2px;opacity:.75;font-weight:600;transition:transform .18s}
+.btn.wide{padding:19px 24px;font-size:17px;min-height:60px;box-shadow:0 10px 24px rgba(184,67,28,.26)}
+.btn:active{transform:translateY(1px)}
+.btn.out{box-shadow:none}
+.btn.out:after{opacity:.5}
+.hero .btn{box-shadow:0 12px 30px rgba(60,14,0,.26)}
+.hero .btn:after{opacity:.55}
+nav .btn{box-shadow:0 4px 12px rgba(184,67,28,.24)}
+.final .btn.ink{box-shadow:0 12px 30px rgba(60,14,0,.28)}
+.crio .btn{box-shadow:0 6px 16px rgba(184,67,28,.22)}
+
+/* hero com mais ar e hierarquia */
+.hero .wrap{padding-top:30px;padding-bottom:34px}
+.qual{padding:7px 14px;letter-spacing:.16em;background:rgba(255,255,255,.1)}
+.hero h1{margin-top:16px;line-height:1}
+.hero .sub{margin-top:12px;font-size:16px}
+.pick{border-radius:12px;padding:16px;background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.34)}
+.pick .hchip{border-radius:10px;font-weight:800}
+.pick select{border-radius:10px}
+.pricehero{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.28)}
+.pricehero b{font-size:30px}
+.scarce{margin-top:12px}
+
+/* cartões e superfícies */
+.card,.calc,.qc,.extras,.crio,.cfg{border-radius:12px}
+.card{box-shadow:0 2px 10px rgba(25,22,18,.04);transition:transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(25,22,18,.09)}
+.qc{box-shadow:0 2px 12px rgba(25,22,18,.05)}
+.qc .print{border-radius:10px}
+.crio img{border-radius:0}
+
+/* ritmo das seções */
+.idx{position:relative;padding-top:14px}
+.idx:before{content:"";position:absolute;top:0;left:0;width:26px;height:2px;background:var(--acc)}
+h2{margin-top:6px}
+
+/* faq mais elegante */
+details summary{padding:20px 0}
+details summary:after{width:26px;height:26px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:16px;line-height:1;transition:.18s}
+details[open] summary:after{background:var(--acc);border-color:var(--acc);color:#fff}
+
+/* barra fixa com mais presença */
+.bar{padding:11px var(--pad) calc(11px + env(safe-area-inset-bottom));box-shadow:0 -8px 26px rgba(25,22,18,.10)}
+.bar .l b{font-size:15px}
+.bar .btn{padding:13px 18px;min-height:48px;font-size:14.5px}
+
+@media(min-width:1000px){
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(184,67,28,.3)}
+  .btn:hover:after{transform:translateX(3px)}
+  .hero .btn:hover{box-shadow:0 16px 36px rgba(60,14,0,.3)}
+  .hero .wrap{padding-top:56px;padding-bottom:56px}
+}
+
+/* ============ MÍDIA EDITORIAL ============ */
+.fig{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--panel,#EFE9E1)}
+.fig img{display:block;width:100%;height:auto}
+.fig .cap{position:absolute;left:10px;bottom:10px;background:rgba(25,22,18,.72);backdrop-filter:blur(6px);color:#fff;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;padding:7px 11px;border-radius:6px}
+.figwrap{margin-top:22px;border:none;border-radius:0;overflow:visible}
+.figwrap img{height:auto;object-fit:contain}
+
+/* print centralizado */
+.printbox{max-width:400px;margin:0 auto 18px}
+.printbox .cap{left:10px}
+.qc.center{text-align:center}
+.qc.center .who{border-top:1px solid var(--line2)}
+
+/* banda larga com texto dentro */
+.band{position:relative;margin-top:26px;border-radius:12px;overflow:hidden;min-height:340px;display:flex;align-items:flex-end}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+.band .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,22,18,0) 30%,rgba(25,22,18,.28) 55%,rgba(25,22,18,.82) 100%)}
+.band .inner{position:relative;padding:22px;color:#fff;width:100%}
+.band .lab{color:rgba(255,255,255,.8)}
+.band h3{color:#fff;font-size:26px;margin-top:6px;letter-spacing:-.035em}
+.band p{color:rgba(255,255,255,.9);font-size:15px;margin:8px 0 16px}
+.band .btn{background:#fff;color:var(--acc)}
+.band .btn:active{background:#FBE6DD}
+@media(min-width:720px){
+  .band{min-height:420px}
+  .band .inner{padding:34px;max-width:60%}
+  .band h3{font-size:32px}
+}
 </style>
 </head>
 <body>
-<header class="site">
-  <div class="container">
-    <a href="#" class="brand">LV Locações</a>
-    <a href="#orcamento" class="header-btn">Orçamento</a>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">LV<em>.</em> LOCAÇÕES</div>
+    <button class="btn" data-send="nav">Reservar data</button>
   </div>
-</header>
-<section class="hero">
-  <div class="container">
-    <div class="rv">
-      <span class="eyebrow">Equipamento Profissional</span>
-      <h1 class="headline">Depilação a LED.</h1>
-      <p class="lede">Zyon Pro Cromatic. Entregue e montado na sua clínica. Fature sem precisar comprar o aparelho.</p>
-      <a href="https://wa.me/5567998971949" class="pill-btn js-wa-cta">Chamar no WhatsApp</a><p style="margin-top:1rem;"><a href="#orcamento" style="font-weight:700;color:var(--accent);text-decoration:underline;text-underline-offset:3px;">ou monte seu pacote no formulário</a></p>
-    </div>
-    <div class="hero-media img-frame rv" style="transition-delay: 0.1s;">
-      <img src="laysa-zyon.jpg" alt="Depilação a LED com o Zyon Pro Cromatic">
-    </div>
-  </div>
-</section>
-<section style="padding: 0 0 6rem 0;">
-  <div class="container">
-    <div class="bento-grid three-cols numbers-grid rv">
-      <div class="bento-card" style="padding: 2rem;"><span class="num-val">Incluso</span><span class="num-lbl">Entrega e Montagem</span></div>
-      <div class="bento-card" style="padding: 2rem;"><span class="num-val">Zero</span><span class="num-lbl">Custo de Manutenção</span></div>
-      <div class="bento-card" style="padding: 2rem;"><span class="num-val">300 km</span><span class="num-lbl">A partir de Nova Andradina (MS)</span></div>
-    </div>
-  </div>
-</section>
-<section style="background: var(--surface-alt);">
-  <div class="container">
-    <div class="center-text rv">
-      <span class="eyebrow">Por que vale a pena</span>
-      <h2 class="subhead">Atenda muito mais gente com uma tecnologia inovadora.</h2>
-      <p class="lede">A depilação a LED atende todos os tons de pele, inclusive pele negra. Mais gente que você pode atender &mdash; e que volta.</p>
-    </div>
-    <div class="bento-grid three-cols rv">
-      <div class="bento-card">
-        <h3>Todos os tons de pele</h3>
-        <p>Do mais claro ao mais escuro, inclusive pele negra. Você atende um público que outros métodos precisam recusar.</p>
+</nav>
+
+<!-- HERO + CONFIGURADOR -->
+<div class="hero" id="topo">
+  <div class="wrap">
+    <span class="qual">Locação de aparelho de depilação a LED · MS e região</span>
+    <h1>Alugue o Zyon e feche a agenda do dia.</h1>
+    <p class="sub">Depilação a LED de última geração, instalada na sua clínica. Você escolhe o pacote de horas.</p>
+
+    <div class="pick">
+      <span class="pl">1 · Horas na diária</span>
+      <div class="row2" id="gper">
+        <button class="hchip" aria-pressed="false" data-per="6">6h</button>
+        <button class="hchip" aria-pressed="false" data-per="8">8h</button>
+        <button class="hchip" aria-pressed="false" data-per="12">12h</button>
+        <button class="hchip" aria-pressed="false" data-per="0">Outro</button>
       </div>
-      <div class="bento-card">
-        <h3>Cliente que volta</h3>
-        <p>Depilação é feita em sessões: a mesma cliente retorna várias vezes. Receita recorrente e agenda cheia.</p>
-      </div>
-      <div class="bento-card">
-        <h3>Faça um LED Day</h3>
-        <p>Alugue por um dia, divulgue um LED Day e encha a agenda de atendimentos. Você fatura o dia inteiro com o aparelho na sua clínica.</p>
-      </div>
+      <span class="pl" style="margin-top:13px">2 · Sua cidade</span>
+      <select id="selCid" aria-label="Sua cidade">
+        <option value="">Selecione a cidade</option>
+        <option data-f="1">Nova Andradina</option>
+        <option data-f="1">Ivinhema</option>
+        <option data-f="1">Batayporã</option>
+        <option data-f="1">Anaurilândia</option>
+        <option data-f="2">Bataguassu</option>
+        <option data-f="2">Naviraí</option>
+        <option data-f="2">Fátima do Sul</option>
+        <option data-f="2">Andradina (SP)</option>
+        <option data-f="3">Dourados</option>
+        <option data-f="3">Três Lagoas</option>
+        <option data-f="3">Amambaí</option>
+        <option data-f="3">Ponta Porã</option>
+        <option data-f="0">Outra cidade</option>
+      </select>
+      <div class="res" id="hres"></div>
     </div>
+
+    <div class="acts">
+      <button class="btn wide" data-send="hero">Fechar meu pacote no WhatsApp</button>
+    </div>
+    <div class="pricehero"><b>A partir de R$ 650</b> <span>a diária, disparos livres</span></div>
+    <div class="scarce"><b>R$ 200 no Pix bloqueiam a sua data.</b> É um aparelho só. A data fica com quem reserva primeiro.</div>
+    <div class="microp"><span><b>810 nm</b></span><span><b>Criogenia</b> até −15 °C</span><span><b>ANVISA</b> 80689889013</span></div>
   </div>
+</div>
+
+<div class="shot rv">
+  <img src="zyon-aparelho.jpg" alt="Zyon, aparelho de depilação a LED de 810 nm" width="1200" height="800" decoding="async">
+  <div class="tg">Zyon · Depilação a LED 810 nm · Cromatic</div>
+</div>
+
+<!-- 01 CONTA -->
+<section id="conta">
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">01 / A conta do dia</span>
+    <div>
+      <h2>Um dia cheio de LED rende quanto na sua clínica?</h2>
+            <div class="calc">
+        <div class="r"><span>Atendimentos no dia</span><div class="stp"><button data-step="at" data-d="-1" aria-label="menos">−</button><input id="iAt" type="number" inputmode="numeric" value="10" min="1" max="60"><button data-step="at" data-d="1" aria-label="mais">+</button></div></div>
+        <div class="r"><span>Quanto você cobra por sessão</span><div class="stp"><button data-step="tk" data-d="-10" aria-label="menos">−</button><input id="iTk" type="number" inputmode="numeric" value="170" min="25" step="10"><button data-step="tk" data-d="10" aria-label="mais">+</button></div></div>
+        
+        <div class="r big"><span>Receita do dia</span><b id="oRec">R$ 1.700</b></div>
+      </div>
+      <p class="note" id="noteCalc">Quanto custa a diária depende da sua cidade e do pacote. <span class="flag">definir 8h, 12h e deslocamento</span></p>
+      <div class="after"><button class="btn wide" data-send="conta" id="btConta">Reservar a data e fazer esse dia</button></div>
+    </div>
+  </div></div>
 </section>
+
+<!-- 02 TECNOLOGIA -->
+<section class="paper" id="tecnologia">
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">02 / A tecnologia</span>
+    <div>
+      <h2>Depilação a LED atende todo fototipo e atende rápido.</h2>
+      <p class="dek">Pele clara, negra ou bronzeada. Perna inteira em torno de 15 minutos.</p>
+      <div class="split"><div>
+        <h3>Na prática</h3>
+        <ul>
+          <li><b>+</b> Fototipos I a VI, inclusive pele negra</li>
+          <li><b>+</b> Cliente bronzeada, sem esperar o inverno</li>
+          <li><b>+</b> Perna inteira em torno de 15 minutos</li>
+          <li><b>+</b> Protocolo em sessões, a mesma cliente volta</li>
+        </ul>
+      </div>
+      <div class="fig figbig"><img src="zyon-aplicacao.jpg" alt="Aplicação com o Zyon" width="1000" height="1333" loading="lazy" decoding="async"><span class="cap">Aplicação real · Clínica LV</span></div></div>
+      <div class="after"><button class="btn wide" data-send="tecnologia">Quero atender esse público</button></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- 03 PROVA -->
 <section>
-  <div class="container split">
-    <div class="rv">
-      <span class="eyebrow">Ecossistema</span>
-      <h2 class="subhead">Tudo pronto.<br>Só atender.</h2>
-      <p class="lede">O equipamento chega testado e instalado no seu endereço. Quando a sua agenda termina, a gente busca de volta.</p>
-      <div class="bento-grid" style="margin-top: 2rem;">
-        <div class="bento-card" style="padding: 2rem;">
-          <h3>Orientação e Suporte</h3>
-          <p>Instruções claras de uso na entrega e linha direta via WhatsApp o tempo todo.</p>
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">03 / Quem já usou</span>
+    <div>
+      <h2>51 pacientes em um único dia.</h2>
+      <div class="qc">
+        <p>“Em um LED Day eu atendi 51 pacientes no mesmo dia. Dá porque o aparelho faz uma perna inteira em torno de 15 minutos.”</p>
+        <div class="who">Laysa Ventura · Clínica LV · Nova Andradina, MS</div>
+      </div>
+      <div class="qc center">
+        <div class="printbox fig"><img src="depoimento-vandresa.jpg" alt="Print da mensagem enviada por Vandresa Falavigna" width="620" height="916" loading="lazy" decoding="async"><span class="cap">Story publicado pela cliente</span></div>
+        <p>“Além de disponibilizar o aparelho, a Laysa veio pessoalmente nos acompanhar, ensinando com paciência o manuseio, as técnicas de aplicação e até estratégias de vendas. Mesmo com chuva e frio, chegou com disposição e fez questão de estar ao nosso lado nos atendimentos. Sem dúvidas, fez toda diferença nesse começo.”</p>
+        <div class="who">Vandresa Falavigna · Viva Mais Clínica de Estética · Dourados, MS</div>
+      </div>
+      <p class="note">Depende da área tratada e do seu ritmo de atendimento.</p>
+      <div class="after"><button class="btn wide" data-send="prova">Quero uma diária cheia assim</button></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- 04 PACOTE -->
+<section class="paper" id="pacote">
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">04 / O pacote</span>
+    <div>
+      <h2>Você diz quantas horas. A gente entrega e instala.</h2>
+      <p class="dek">Hora extra, se a fila passar do previsto.</p>
+      <div class="cards">
+        <button class="card" aria-pressed="false" data-per="6">
+          <div class="ch"><span class="h">6h</span><span class="tag">meia diária</span></div>
+          <p class="d">Para começar e ver quantas clientes aparecem.</p>
+          <div class="pr"><span>disparos livres</span><b>a partir de R$ 650</b></div>
+        </button>
+        <button class="card" aria-pressed="false" data-per="8">
+          <div class="ch"><span class="h">8h</span><span class="tag on">dia cheio</span></div>
+          <p class="d">Agenda cheia em um turno, do jeito que a maioria fecha.</p>
+          <div class="pr"><span>disparos livres</span><b>sob consulta</b></div>
+        </button>
+        <button class="card" aria-pressed="false" data-per="12">
+          <div class="ch"><span class="h">12h</span><span class="tag">manhã e tarde</span></div>
+          <p class="d">Para quem já tem fila formada e quer despachar de uma vez.</p>
+          <div class="pr"><span>disparos livres</span><b>sob consulta</b></div>
+        </button>
+        <button class="card" aria-pressed="false" data-per="0">
+          <div class="ch"><span class="h">Outro</span><span class="tag">sob medida</span></div>
+          <p class="d">Sua agenda pede outro tamanho? Você diz e a gente fecha.</p>
+          <div class="pr"><span>disparos livres</span><b>sob medida</b></div>
+        </button>
+      </div>
+      <div class="after"><button class="btn wide" data-send="pacote">Fechar o meu pacote agora</button></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- 05 LED DAY -->
+<section id="ledday">
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">05 / A ideia que funciona</span>
+    <div>
+      <h2>O LED Day que a Clínica LV faz na própria casa.</h2>
+      <p class="dek">A Laysa fecha uma data só para LED na clínica dela, avisa as clientes dela e transforma o dia em evento, com recepção e aperitivo para quem espera. Foi num dia desses que saíram os 51 atendimentos. O aparelho é seu pelo dia contratado.</p>
+      <p class="dek" style="margin-top:14px"><b>Da consulta à devolução</b></p>
+      <div class="steps">
+        <div><div class="n">01</div><h4>Consulta</h4><p>Você informa cidade, data e horas. Recebe disponibilidade e valor.</p></div>
+        <div><div class="n">02</div><h4>Contrato</h4><p>Contrato assinado e caução paga. A data fica reservada no seu nome.</p></div>
+        <div><div class="n">03</div><h4>Entrega</h4><p>Instalação, teste e liberação no seu endereço, com orientação de uso.</p></div>
+        <div><div class="n">04</div><h4>Devolução</h4><p>A LV recolhe o aparelho no fim da diária contratada.</p></div>
+      </div>
+      <div class="after"><button class="btn wide" data-send="ledday">Quero fazer um dia assim</button></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- 06 APARELHO -->
+<section class="paper" id="equipamento">
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">06 / O aparelho</span>
+    <div>
+      <h2>Zyon, depilação a LED de 810 nm, ANVISA 80689889013.</h2>
+      <div>
+        <div class="spec">
+          <div class="row"><span class="sk">Tecnologia</span><span class="sv">Diodo LED 810 nm</span></div>
+          <div class="row"><span class="sk">Resfriamento</span><span class="sv">Criogenia SDC, até −15 °C</span></div>
+          <div class="row"><span class="sk">Modos</span><span class="sv">Pontual, varredura, sequencial</span></div>
+          <div class="row"><span class="sk">Fototipos</span><span class="sv">I a VI</span></div>
+          <div class="row"><span class="sk">Vida útil</span><span class="sv">100 milhões de disparos</span></div>
+          <div class="row"><span class="sk">Peso</span><span class="sv">26 kg</span></div>
+          <div class="row"><span class="sk">Fabricante</span><span class="sv">Cromatic</span></div>
+        </div>
+        
+      </div>
+
+      <div class="crio rv">
+        <img src="laysa-crio-inteira.jpg" alt="Criolipólise na Clínica LV" width="1500" height="843" loading="lazy" decoding="async">
+        <div>
+          <span class="lab">Conheça também</span>
+          <h3>Criolipólise.</h3>
+          <p>Também disponível para locação.</p>
+          <button class="btn" data-send="crio">Quero a Crio</button>
         </div>
       </div>
+
+      <div class="after"><button class="btn out wide" data-send="tecnica">Tirar dúvida técnica</button></div>
     </div>
-    <div class="img-frame contain rv" style="transition-delay: 0.1s; aspect-ratio: 3/2;">
-      <img src="zyon-pro-oficial.jpg" alt="Equipamento de depilação a LED Zyon Pro Cromatic" loading="lazy">
-    </div>
-  </div>
+  </div></div>
 </section>
-<section style="padding-top: 0;">
-  <div class="container split">
-    <div class="img-frame portrait rv" style="transition-delay: 0.1s;">
-      <img src="laysa-crio.jpg" alt="Aparelho de criolipólise Crio em uso" loading="lazy">
-    </div>
-    <div class="rv">
-      <span class="eyebrow">Conheça nossos aparelhos</span>
-      <h2 class="subhead">Quer incluir a Crio?</h2>
-      <p class="lede">Adicione a criolipólise no mesmo orçamento. Sem compromisso.</p>
-      <a href="#orcamento" class="pill-btn js-crio-cta" style="margin-top: 2rem;">Adicionar ao orçamento</a>
-    </div>
-  </div>
-</section>
-<section style="background: var(--surface-alt);">
-  <div class="container center-text rv">
-    <span class="eyebrow">A Especialista</span>
-    <h2 class="subhead">Laysa Ventura.</h2>
-    <p class="lede" style="max-width: 60ch;">Laysa é esteticista e está à frente da Clínica LV, em Nova Andradina &mdash; um espaço completo, com depilação a LED, Crio, drenagem, limpeza de pele e Head Spa. Você não aluga com um intermediário: aluga com a profissional que usa esse equipamento todos os dias no próprio atendimento.</p>
-    <div class="img-frame natural" style="max-width: 300px; margin: 2.5rem auto 0;"><img src="laysa-hero.jpg" alt="Laysa Ventura, da LV Estética" loading="lazy"></div>
-  </div>
-</section>
+
+<!-- 07 DUVIDAS -->
 <section>
-  <div class="container" style="max-width: 800px;">
-    <div class="center-text rv" style="margin-bottom: 2.5rem;">
-      <span class="eyebrow">Quem já alugou</span>
-      <h2 class="subhead">A palavra de quem usa.</h2>
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">07 / Dúvidas</span>
+    <div>
+      <h2>O que as clínicas perguntam antes de reservar.</h2>
+      <div style="margin-top:22px">
+        
+        <details><summary>Quem aplica o procedimento?</summary><p>A aplicação é feita por profissional habilitada da sua clínica. A LV entrega, instala e orienta o uso no local.</p></details>
+        <details><summary>Vocês cobram por disparo?</summary><p>Não. Dentro da diária os disparos são livres.</p></details>
+        <details><summary>O que está incluso na diária?</summary><p><b>Por conta da LV:</b> disparos livres, transporte de ida e volta, instalação, teste e liberação, orientação de uso na entrega, suporte por WhatsApp durante a diária, manutenção preventiva e revisão entre locações.<br><br><b>Por conta da clínica:</b> profissional habilitada para aplicar, sala com ponto de energia dentro do padrão, insumos de consumo <span class="flag">definir</span>, avisar as próprias clientes da data e integridade do equipamento conforme cláusula de danos.</p></details>
+        <details><summary>Como funciona a reserva?</summary><p>Caução de R$ 200 no Pix reserva a data no seu nome. O restante é acertado no dia da locação. <span class="flag">confirmar com a Laysa: restante na entrega ou no recolhimento</span> Sem a caução a data continua disponível para outra clínica.</p></details>
+        <details><summary>Preciso saber operar o aparelho?</summary><p>Orientação na entrega, com o equipamento ligado. Suporte por WhatsApp durante a diária.</p></details>
+        <details><summary>Atende pele negra e pele bronzeada?</summary><p>Fototipos I a VI. Avaliação e parâmetros seguem com a profissional que aplica.</p></details>
+        <details><summary>Contrato, nota fiscal e cancelamento</summary><p>Contrato de locação com diária, horas, valor, deslocamento, responsabilidades e cláusula de danos. A data é reservada com caução de R$ 200 no Pix e o restante é acertado no dia da locação. Nota fiscal pela LV Estética Personalizada LTDA. <span class="flag">definir antecedência mínima e multa de cancelamento</span></p></details>
+      </div>
+      <div class="after"><button class="btn out wide" data-send="duvida">Minha dúvida não está aqui</button></div>
     </div>
-    <figure class="bento-card rv" style="text-align: center; align-items: center;">
-      <div style="width: 44px; height: 3px; background: var(--cta-bg); border-radius: 2px; margin-bottom: 1.75rem;"></div>
-      <blockquote style="margin: 0; font-size: clamp(1.2rem, 2.6vw, 1.55rem); font-weight: 600; line-height: 1.5; letter-spacing: -0.01em; color: var(--ink-heavy);">
-        &ldquo;Além de disponibilizar o aparelho, a Laysa veio pessoalmente nos acompanhar &mdash; ensinando com paciência o manuseio, as técnicas de aplicação e até estratégias de vendas. Mesmo com chuva e frio, chegou com disposição e fez questão de estar ao nosso lado nos atendimentos. Sem dúvidas, fez toda diferença nesse começo.&rdquo;
-      </blockquote>
-      <figcaption style="margin-top: 1.75rem; font-weight: 700; color: var(--ink-heavy);">
-        Vandresa Falavigna
-        <span style="display: block; font-weight: 500; color: var(--ink-light); font-size: 0.95rem; margin-top: 4px;">Viva Mais · Clínica de Estética · Dourados (MS)</span>
-      </figcaption>
-    </figure>
-  </div>
+  </div></div>
 </section>
-<section class="faq">
-  <div class="container" style="max-width: 800px;">
-    <div class="center-text rv">
-      <span class="eyebrow">Dúvidas</span>
-      <h2 class="subhead">Perguntas frequentes.</h2>
+
+<!-- 08 FECHAMENTO -->
+<section class="final">
+  <div class="wrap"><div class="shead rv">
+    <span class="lab idx">08 / Reserva</span>
+    <div>
+      <h2>Diga a cidade e o dia. A gente confirma se está livre.</h2>
+      <div class="after"><button class="btn ink wide" data-send="final" id="btFinal">Ver datas livres</button></div>
     </div>
-    <div class="rv">
-      <details>
-        <summary>Como funciona a locação?</summary>
-        <p>Você escolhe o pacote de horas. Entregamos e montamos na sua cidade. Buscamos ao fim do período.</p>
-      </details>
-      <details>
-        <summary>Quanto custa a locação?</summary>
-        <p>O valor depende da sua cidade, porque a entrega entra na conta. Me passa a sua cidade no formulário que eu te respondo com o valor fechado, sem enrolação.</p>
-      </details>
-      <details>
-        <summary>Vocês atendem a minha cidade?</summary>
-        <p>A base é em Nova Andradina (MS) e a gente atende num raio de até 300 km. Me passa a sua cidade no formulário que eu confirmo a entrega.</p>
-      </details>
-      <details>
-        <summary>Qual a duração dos pacotes?</summary>
-        <p>Trabalhamos com opções precisas de 6, 8 ou 12 horas. Defina a sua necessidade no formulário.</p>
-      </details>
-      <details>
-        <summary>Como o equipamento é reservado?</summary>
-        <p>O bloqueio da data é feito com um caução de R$ 200 via Pix. O restante é acertado no dia da retirada.</p>
-      </details>
-    </div>
-  </div>
+  </div></div>
 </section>
-<span id="orcamento" style="display:block; height:1px; visibility:hidden;"></span>
-<section style="background: var(--bg-base);">
-  <div class="container">
-    <div class="center-text rv">
-      <span class="eyebrow">Contato</span>
-      <h2 class="subhead">Monte o seu pacote.</h2>
-      <p class="lede">Me passa a sua cidade e o pacote que eu te respondo no WhatsApp com o valor fechado.</p>
-    </div>
-    <form class="form-wrap rv" id="leadForm" novalidate style="transition-delay: 0.1s;">
-      <div class="field">
-        <input type="text" id="cidade" name="cidade" class="apple-input" required autocomplete="address-level2" placeholder="Cidade de atendimento">
-      </div>
-      <div class="field">
-        <select id="pacote" name="pacote" class="apple-input" style="cursor: pointer; appearance: none;">
-          <option value="" disabled selected>Escolha as horas</option>
-          <option value="6h">6 horas</option>
-          <option value="8h">8 horas</option>
-          <option value="12h">12 horas</option>
-          <option value="indefinido">Ainda não sei</option>
-        </select>
-      </div>
-      <div class="field">
-        <input type="text" id="nome" name="nome" class="apple-input" required autocomplete="name" placeholder="Seu nome">
-      </div>
-      <div class="field">
-        <input type="tel" id="whatsapp" name="whatsapp" class="apple-input" required autocomplete="tel" inputmode="tel" placeholder="Seu WhatsApp">
-      </div>
-      <label class="checkbox-item">
-        <input type="checkbox" id="interesseCrio" name="interesseCrio">
-        <div class="checkbox-label">
-          Adicionar Criolipólise
-          <small>Orçamento unificado. Sem compromisso.</small>
-        </div>
-      </label>
-      <button type="submit" class="pill-btn" style="width: 100%; font-size: 1.15rem; padding: 24px;" id="submitBtn">Enviar Solicitação</button>
-      <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
-    </form>
-  </div>
-</section>
+
 <footer>
-  <div class="container">
-    <div class="footer-brand">LV Locações</div>
-    <p style="font-size: 1rem; color: #D1CFCA;">Equipamentos de Alta Performance · MS</p>
-    <div class="footer-bottom">
-      <span>© 2026 LV Estética Personalizada LTDA · <a href="privacidade.html">Privacidade</a></span>
-    </div>
+  <div class="wrap">
+    <div><span style="color:var(--ink);font-weight:700">LV Locações</span> · Equipamentos para estética · Nova Andradina, MS</div>
+    <div>© 2026 LV Estética Personalizada LTDA</div>
   </div>
 </footer>
-<a href="https://wa.me/5567998971949" class="floating-cta js-wa-cta" id="floatingCta" aria-label="Chamar no WhatsApp">Chamar no WhatsApp <span aria-hidden="true">&rarr;</span></a>
+
+<div class="bar">
+  <div class="l" id="barTxt">A partir de R$ 650<b>Reservar minha data</b></div>
+  <button class="btn" data-send="bar">Quero minha data</button>
+</div>
+
 <script>
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWQJ33ot3_KhaVpOtCUMfjVedfj_AuQxUgjocybEgKg_WGSfWZI3hQ2BC1ue-Tonzw0A/exec';
-  const WHATSAPP_NUMBER = '5567998971949'; var WA_TEXT = encodeURIComponent('Olá, Laysa! Quero um orçamento de ALUGUEL do LED para minha clínica. Minha cidade é: '); document.querySelectorAll('.js-wa-cta').forEach(function (el) { el.setAttribute('href', 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + WA_TEXT); el.addEventListener('click', function () { if (window.gtag) gtag('event', 'click_whatsapp', { posicao: el.id || 'hero' }); if (window.fbq) fbq('track', 'Contact', { content_name: 'WhatsApp direto LV Locacoes' }); }); });
-  const io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+(function(){
+  var FONE='5567998971949';
+  var S={per:null,cid:null,fai:null};
+  var FAIXA={1:'Faixa 1 · frete incluso',2:'Faixa 2 · 81 a 180 km',3:'Faixa 3 · 181 a 300 km',0:'a confirmar'};
+
+  function $(s,c){return (c||document).querySelector(s)}
+  function all(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+  function brl(n){return 'R$ '+n.toLocaleString('pt-BR')}
+
+  function paint(){
+    all('[data-per]').forEach(function(b){
+      b.setAttribute('aria-pressed', String(Number(b.dataset.per)===S.per));
     });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
-  document.querySelectorAll('.js-crio-cta').forEach(function (el) {
-    el.addEventListener('click', function () {
-      var cb = document.getElementById('interesseCrio');
-      if (cb) cb.checked = true;
-    });
+    var sel=$('#selCid'); if(sel && S.cid && sel.value!==S.cid) sel.value=S.cid;
+    var hr=$('#hres');
+    if(hr){
+      if(S.per!==null||S.cid){
+        hr.classList.add('on');
+        hr.textContent=(S.per===null?'horas a escolher':(S.per===0?'horas sob medida':S.per+' horas'))+' · '+(S.cid||'cidade a escolher');
+      } else { hr.classList.remove('on'); }
+    }
+    var t=$('#barTxt');
+    if(S.per!==null||S.cid){
+      t.innerHTML = (S.cid||'Cidade a definir')+'<b>'+(S.per!==null&&S.per!==0?S.per+'h · ':'')+'reservar data</b>';
+    }
+    var nc=$('#noteCalc');
+    if(nc && S.cid) nc.innerHTML='Peça o valor da diária em '+S.cid+' e compare com esse número. <span class="flag">definir 8h, 12h e deslocamento</span>';
+    var bf=$('#btFinal');
+    if(bf) bf.textContent = S.cid ? ('Ver datas livres em '+S.cid) : 'Ver datas livres';
+    var bc=$('#btConta');
+    if(bc) bc.textContent = S.cid ? ('Reservar essa data em '+S.cid) : 'Reservar a data e fazer esse dia';
+    calc();
+  }
+  function calc(){
+    var at=Math.max(1,parseInt($('#iAt').value||'0',10));
+    var tk=Math.max(0,parseInt($('#iTk').value||'0',10));
+    $('#oRec').textContent=brl(at*tk);
+  }
+
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-per]');
+    if(b){S.per=Number(b.dataset.per);paint();return}
+    var c=e.target.closest('[data-c]');
+    if(c){S.cid=c.dataset.c;S.fai=Number(c.dataset.f);paint();
+      if(c.classList.contains('ci')){window.scrollTo({top:0,behavior:'smooth'})}
+      return}
+    var g=e.target.closest('[data-go]');
+    if(g){document.getElementById(g.dataset.go).scrollIntoView({behavior:'smooth'});
+      setTimeout(function(){var f=$('#gper .chip');if(f&&!S.per){f.focus()}},600);return}
+    var st=e.target.closest('[data-step]');
+    if(st){var el=$(st.dataset.step==='at'?'#iAt':'#iTk');
+      el.value=Math.max(Number(el.min||1),(parseInt(el.value||'0',10)+Number(st.dataset.d)));calc();return}
+    var s=e.target.closest('[data-send]');
+    if(s){send(s.dataset.send);return}
   });
-  (function () {
-    var fc = document.getElementById('floatingCta');
-    if (!fc || !('IntersectionObserver' in window)) return;
-    var hero = document.querySelector('.hero');
-    var formEl = document.getElementById('leadForm');
-    var heroVis = true, formVis = false;
-    function upd() { fc.classList.toggle('show', !(heroVis || formVis)); }
-    var ob = new IntersectionObserver(function (ents) {
-      ents.forEach(function (en) {
-        if (en.target === hero) heroVis = en.isIntersecting;
-        if (en.target === formEl) formVis = en.isIntersecting;
-      });
-      upd();
-    }, { threshold: 0.01 });
-    if (hero) ob.observe(hero);
-    if (formEl) ob.observe(formEl);
-  })();
-  var form = document.getElementById('leadForm');
-  var btn  = document.getElementById('submitBtn');
-  var msg  = document.getElementById('formMsg');
-  function showMsg(type, text) { if (msg) { msg.textContent = text; msg.className = 'form-msg ' + type; } }
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var required = ['cidade', 'pacote', 'nome', 'whatsapp'];
-    for (var i = 0; i < required.length; i++) {
-      if (!form.elements[required[i]].value.trim()) {
-        showMsg('error', 'Preencha cidade, horas, nome e WhatsApp.');
-        form.elements[required[i]].focus();
+  var _sel=$('#selCid');
+  if(_sel) _sel.addEventListener('change',function(){
+    var o=this.options[this.selectedIndex];
+    S.cid=this.value||null; S.fai=this.value?Number(o.dataset.f):null; paint();
+  });
+  ['#iAt','#iTk'].forEach(function(id){var el=$(id); if(el) el.addEventListener('input',calc)});
+
+  var TESTE = new URLSearchParams(location.search).get('teste') === '1'; // ?teste=1 marca teste interno e suprime lead + Pixel
+  function track(intent){
+    var d={intent:intent,pacote:(S.per===null?'nao_informado':S.per),cidade:S.cid||'nao_informado',faixa:S.fai===null?'nao_informado':S.fai,teste_interno:TESTE?1:0};
+    try{ if(window.gtag){ gtag('event','click_whatsapp',d); if(!TESTE) gtag('event','generate_lead',d); } }catch(e){}
+    try{ if(window.fbq && !TESTE) fbq('track','Contact',{content_name:intent}); }catch(e){}
+  }
+  function send(intent){
+    if((intent==='hero'||intent==='bar') && S.per===null && !S.cid){
+      var pk=document.querySelector('.pick');
+      if(pk){ pk.scrollIntoView({behavior:'smooth',block:'center'});
+        pk.animate([{boxShadow:'0 0 0 0 rgba(255,255,255,0)'},{boxShadow:'0 0 0 4px rgba(255,255,255,.55)'},{boxShadow:'0 0 0 0 rgba(255,255,255,0)'}],{duration:900});
+        var f=document.querySelector('.hchip'); if(f) f.focus();
         return;
       }
     }
-    btn.disabled = true;
-    var oldLabel = btn.textContent;
-    btn.textContent = 'Abrindo WhatsApp...';
-    var interesseCrio = form.elements.interesseCrio.checked;
-    var data = {
-      nome:        form.elements.nome.value.trim(),
-      whatsapp:    form.elements.whatsapp.value.trim(),
-      cidade:      form.elements.cidade.value.trim(),
-      equipamento: interesseCrio ? 'LED + Criolipólise (interesse)' : 'LED',
-      pacote:      form.elements.pacote.value || '',
-      origem:      document.referrer || 'direto',
-      ts:          new Date().toISOString()
-    };
-    var linhaCrio = interesseCrio ? '\nTambém quero a Criolipólise.' : '';
-    var texto = encodeURIComponent(
-      'Olá, Laysa! Vim pela página e quero meu orçamento.\n\n' +
-      'Nome: ' + data.nome + '\n' +
-      'WhatsApp: ' + data.whatsapp + '\n' +
-      'Cidade: ' + data.cidade + '\n' +
-      'Pacote: ' + (data.pacote || 'a definir') + linhaCrio
-    );
-    var whatsappUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + texto;
-    // 1) salva o lead na planilha
-    var payload = JSON.stringify(data);
-    var enviado = false;
-    try {
-      if (navigator.sendBeacon) {
-        enviado = navigator.sendBeacon(APPS_SCRIPT_URL, new Blob([payload], { type: 'text/plain;charset=utf-8' }));
-      }
-    } catch (e) { enviado = false; }
-    if (!enviado) {
-      try {
-        fetch(APPS_SCRIPT_URL, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: payload }).catch(function (err) {});
-      } catch (e) {}
+    var base={
+      config:'Quero um orçamento de aluguel do aparelho de depilação a LED.',
+      conta:'Quero a conta da diária com o valor da minha cidade.',
+      prova:'Quero fazer um dia de LED na minha clínica como esse.',
+      periodo:'Quero o orçamento desse pacote de horas.',
+      ledday:'Quero marcar um LED Day na minha clínica.',
+      escopo:'Tenho dúvida sobre o contrato de locação.',
+      tecnica:'Tenho uma dúvida técnica sobre o aparelho.',
+      data:'Quero saber se a minha data está livre.',
+      cidade:'Minha cidade não está na lista. Quero saber o deslocamento.',
+      duvida:'Tenho uma dúvida sobre o aluguel do aparelho.',
+      bar:'Quero um orçamento de aluguel do aparelho de depilação a LED.',
+      tecnologia:'Quero alugar o LED para atender pele negra e cliente bronzeada.',
+      pacote:'Quero fechar um pacote de horas de locação do LED.',
+      crio:'Quero incluir a criolipólise na mesma data.',
+      recusa:'Quero alugar o LED para atender pele negra e cliente bronzeada.',
+      hero:'Quero fechar um pacote de locação do LED.',
+      nav:'Quero consultar uma data para alugar o aparelho de depilação a LED.',
+      final:'Quero saber quais datas estão livres.'
+    }[intent] || 'Quero o valor da locação do Zyon.';
+
+    var msg=base;
+    if(S.cid) msg+=' Cidade: '+S.cid+'.';
+    if(S.per!==null) msg+= (S.per===0?' Preciso de um pacote sob medida.':' Pacote: '+S.per+' horas.');
+    if(intent==='conta'){
+      msg+=' Atendimentos na diária: '+$('#iAt').value+'. Ticket: R$ '+$('#iTk').value+'.';
     }
-    // 2) marca a conversao no Meta Pixel (com Advanced Matching) e no Google Analytics
-    if (window.fbq) {
-      var partesNome   = data.nome.split(/\s+/).filter(Boolean);
-      var primeiroNome = partesNome.shift() || '';
-      var sobrenome    = partesNome.join(' ');
-      var telDigitos   = data.whatsapp.replace(/\D/g, '');
-      var telE164      = telDigitos
-        ? (telDigitos.indexOf('55') === 0 && telDigitos.length >= 12 ? telDigitos : '55' + telDigitos)
-        : '';
-      fbq('init', '1392856086034216', {
-        fn: primeiroNome,
-        ln: sobrenome,
-        ph: telE164,
-        ct: data.cidade
-      });
-      fbq('track', 'Lead', {
-        content_name: 'Orcamento LV Locacoes',
-        content_category: data.equipamento
-      });
-    }
-    if (window.gtag) { gtag('event', 'generate_lead', { pacote: data.pacote, cidade: data.cidade, equipamento: data.equipamento }); }
-    // 3) abre o WhatsApp
-    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    showMsg('success', 'Pronto! Abrindo o WhatsApp pra fechar o orcamento...');
-    form.reset();
-    if (isMobile) {
-      window.location.href = whatsappUrl;
-    } else {
-      var win = window.open(whatsappUrl, '_blank');
-      if (!win) { window.location.href = whatsappUrl; }
-    }
-    btn.disabled = false;
-    btn.textContent = oldLabel;
-  });
+    if(!S.cid) msg+=' Minha cidade é';
+    track(intent);
+    // versao de aprovacao: sem gravacao em planilha
+
+    window.open('https://wa.me/'+FONE+'?text='+encodeURIComponent(msg),'_blank','noopener');
+  }
+
+  // reveal
+  var rv=all('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(x){io.observe(x)});
+  } else { rv.forEach(function(x){x.classList.add('in')}) }
+
+  paint();
+})();
 </script>
 </body>
 </html>
